@@ -1,0 +1,14 @@
+{
+"dom0_verify"       : "True",
+"domu_verify"       : "True",
+"switch_verify"     : "True",
+"cell_verify"       : "True",
+"db_check"          : " -dball",
+"identitydir"       : "",
+"enable_tfa_upload" : "True",
+"tfa_url"           : "", 
+"tfa_user"          : "",
+"tfa_pwd"           : "",
+"remoteuser"        : "root",
+"other"             : " -b"
+}

@@ -1,0 +1,108 @@
+{
+    "clustername": "testVmclusterDemo010",
+    "dom0_bonding": false,
+    "grid_version": "v19",
+    "exaunitAllocations": {
+        "cores": 50, 
+        "memoryGb": 300,
+        "storageTb": 10, 
+        "ohomeSizeGb": 600
+    },
+    "customer_network": {
+        "timezone": "PST",
+        "scan": {
+            "hostname": "testVmclusterDemo009-scan",
+            "port": 1521,
+            "ips": [
+                "10.0.10.231",
+                "10.0.10.114",
+                "10.0.10.24"
+            ]
+        },
+        "network_services": {
+            "dns": [
+                "169.254.169.254"
+            ],
+            "ntp": [
+                "169.254.169.254"
+            ]
+        },
+        "nodes": [
+            {
+                "vip": {
+                    "hostname": "testVmclusterDemo0091-vip",
+                    "domainname": "exacomputecusto.jboduvcn.oraclevcn.com",
+                    "ip": "10.0.10.83"
+                },
+                "client": {
+                    "hostname": "testVmclusterDemo009client1-vip",
+                    "domainname": "exacomputecusto.jboduvcn.oraclevcn.com",
+                    "ip": "10.0.10.85",
+                    "netmask": "255.255.255.0",
+                    "vlantag": "1",
+                    "gateway": "10.0.10.1",
+                    "mac": "00:00:17:01:6F:C4",
+                    "standby_vnic_mac": "02:00:17:01:10:9A",
+                    "hw_node_id": null,
+                    "dom0_oracle_name": "iad103709exdd013",
+                    "domu_oracle_name": null
+                },
+                "backup": {
+                    "hostname": "testVmclusterDemo009backup1-vip",
+                    "domainname": "exacomputebacku.jboduvcn.oraclevcn.com",
+                    "ip": "10.0.11.85",
+                    "netmask": "255.255.255.0",
+                    "vlantag": "2",
+                    "gateway": "10.0.11.1",
+                    "mac": "00:00:17:01:55:1C",
+                    "standby_vnic_mac": "00:00:17:01:04:4A",
+                    "hw_node_id": null,
+                    "dom0_oracle_name": "iad103709exdd013",
+                    "domu_oracle_name": null
+                },
+                "vmId": "Exacomp-vm-instance-8922a56af033464ca9ff952649a9525a"
+            },
+            {
+                "vip": {
+                    "hostname": "testVmclusterDemo0092-vip",
+                    "domainname": "exacomputecusto.jboduvcn.oraclevcn.com",
+                    "ip": "10.0.10.154"
+                },
+                "client": {
+                    "hostname": "testVmclusterDemo009client2-vip",
+                    "domainname": "exacomputecusto.jboduvcn.oraclevcn.com",
+                    "ip": "10.0.10.215",
+                    "netmask": "255.255.255.0",
+                    "vlantag": "1",
+                    "gateway": "10.0.10.1",
+                    "mac": "00:00:17:01:89:05",
+                    "standby_vnic_mac": "00:00:17:01:F9:7F",
+                    "hw_node_id": null,
+                    "dom0_oracle_name": "iad103709exdd012",
+                    "domu_oracle_name": null
+                },
+                "backup": {
+                    "hostname": "testVmclusterDemo009backup2-vip",
+                    "domainname": "exacomputebacku.jboduvcn.oraclevcn.com",
+                    "ip": "10.0.11.45",
+                    "netmask": "255.255.255.0",
+                    "vlantag": "2",
+                    "gateway": "10.0.11.1",
+                    "mac": "00:00:17:01:F2:71",
+                    "standby_vnic_mac": "00:00:17:01:BE:9B",
+                    "hw_node_id": null,
+                    "dom0_oracle_name": "iad103709exdd012",
+                    "domu_oracle_name": null
+                },
+                "vmId": "Exacomp-vm-instance-00098470a9964abe9a6609fd8a9042c4"
+            }
+        ]
+    },
+    "idemtoken": "205954b2-b1f7-4b67-9a54-fea5f09a02a7",
+    "clusterId": "ocid1.exacomputevmcluster.oc1.iad.0frdr58lry8qeb20o709vhnnqyrfmoruzb93aurtkuxjytoc4wreone2ch0d",
+    "serviceType": "Exacompute",
+    "storageType": "Exascale",
+    "clusterVault": "oracle-vault",
+    "className": "ProvisioningVMClusterCreateRequest",
+    "version": "1.0"
+}

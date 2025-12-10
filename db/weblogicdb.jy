@@ -1,0 +1,68 @@
+from java.io import FileInputStream
+import os
+
+loc  = os.environ["ECRA_WEBLOGIC"]
+
+propInputStream = FileInputStream(loc)
+config = Properties()
+config.load(propInputStream)
+
+domainName    = config.get("domain.name")
+adminURL      = config.get("admin.url")
+adminUserName = config.get("admin.userName")
+adminPassword = config.get("admin.password")
+
+dsName           = config.get("datasource.name")
+dsFileName       = config.get("datasource.filename")
+dsDatabaseName   = config.get("datasource.database.name")
+datasourceTarget = config.get("datasource.target")
+dsJNDIName       = config.get("datasource.jndiname")
+dsDriverName     = config.get("datasource.driver.class")
+dsURL            = config.get("datasource.url")
+dsUserName       = config.get("datasource.username")
+dsPassword       = config.get("datasource.password")
+dsTestQuery      = config.get("datasource.test.query")
+
+connect(adminUserName, adminPassword, adminURL)
+edit()
+startEdit()
+
+cd('/')
+cmo.createJDBCSystemResource(dsName)
+
+cd('/JDBCSystemResources/' + dsName + '/JDBCResource/' + dsName)
+
+cmo.setName(dsName)
+
+cd('/JDBCSystemResources/' + dsName + '/JDBCResource/' + dsName + '/JDBCDataSourceParams/' + dsName )
+set('JNDINames',jarray.array([String(dsName )], String))
+
+cd('/JDBCSystemResources/' + dsName + '/JDBCResource/' + dsName + '/JDBCDriverParams/' + dsName )
+
+cmo.setUrl(dsURL)
+cmo.setDriverName( dsDriverName )
+cmo.setPassword(dsPassword)
+
+cd('/JDBCSystemResources/' + dsName + '/JDBCResource/' + dsName + '/JDBCConnectionPoolParams/' + dsName )
+cmo.setTestTableName(dsTestQuery)
+
+cd('/JDBCSystemResources/' + dsName + '/JDBCResource/' + dsName + '/JDBCDriverParams/' + dsName + '/Properties/' + dsName )
+cmo.createProperty('user')
+
+cd('/JDBCSystemResources/' + dsName + '/JDBCResource/' + dsName + '/JDBCDriverParams/' + dsName + '/Properties/' + dsName + '/Properties/user')
+cmo.setValue(dsUserName)
+
+cd('/JDBCSystemResources/' + dsName + '/JDBCResource/' + dsName + '/JDBCDriverParams/' + dsName + '/Properties/' + dsName )
+cmo.createProperty('databaseName')
+
+cd('/JDBCSystemResources/' + dsName + '/JDBCResource/' + dsName + '/JDBCDriverParams/' + dsName + '/Properties/' + dsName + '/Properties/databaseName')
+cmo.setValue(dsDatabaseName)
+
+cd('/JDBCSystemResources/' + dsName + '/JDBCResource/' + dsName + '/JDBCDataSourceParams/' + dsName )
+cmo.setGlobalTransactionsProtocol('TwoPhaseCommit')
+
+cd('/SystemResources/' + dsName )
+set('Targets',jarray.array([ObjectName('com.bea:Name=' + datasourceTarget + ',Type=Server')], ObjectName))
+
+save()
+activate()

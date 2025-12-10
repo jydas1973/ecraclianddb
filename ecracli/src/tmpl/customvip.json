@@ -1,0 +1,24 @@
+{
+    "rackname" : "sea101111exd-d0-03-04-cl-04-06-clu01",
+    "customvip": [
+        {
+            "domainname": "data.customer2.oraclevcn.com",
+            "hostname": "ed2db01-vip",
+            "ip": "10.0.0.5",
+            "interfacetype" : "client/backup",
+            "standby_vnic_mac": "00:09:A9:78:67",
+            "mac": "00:09:A6:EF:78",
+            "nodename": "FQDN of the VM where VIP is attached"
+        },
+        {
+            "domainname": "data.customer2.oraclevcn.com",
+            "hostname": "ed2db02-vip",
+            "ip": "10.0.0.6",
+            "interfacetype" : "client/backup",
+            "standby_vnic_mac": "00:09:A9:78:68",
+            "mac": "00:09:A6:EF:79",
+            "nodename": "FQDN of the VM"
+        }
+    ]
+}
+

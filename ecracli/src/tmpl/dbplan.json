@@ -1,0 +1,18 @@
+{
+ "DBPlan" : [
+ { "dbname" : "orcl", "share" : "4" },
+ { "dbname" : "orcln", "share" : "2" },
+ { "dbname" : "orcldg", "share" : "2" },
+ { "dbname" : "orclcl3", "share" : "2" },
+ { "dbname" : "orclcl2", "share" : "2" },
+ { "dbname" : "orcldg_01", "share" : "2" }
+ ],
+  "dbPlan" : [
+ { "dbname" : "orcl", "share" : "4" },
+ { "dbname" : "orcln", "share" : "2" },
+ { "dbname" : "orcldg", "share" : "2" },
+ { "dbname" : "orclcl3", "share" : "2" },
+ { "dbname" : "orclcl2", "share" : "2" },
+ { "dbname" : "orcldg_01", "share" : "2" }
+ ]
+}

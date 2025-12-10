@@ -1,0 +1,16 @@
+domain.name=base_domain
+admin.url=t3://localhost:7001
+admin.userName=weblogic
+admin.password=welcome1
+
+datasource.name=rest_api
+datasource.database.name=pdb1
+datasource.target=AdminServer
+datasource.filename=rest_api_jdbc.xml
+datasource.jndiname=rest_api
+datasource.driver.class=oracle.jdbc.xa.client.OracleXADataSource
+datasource.url=jdbc:oracle:thin:@10.241.224.175:1521/pdb1.opcdbaas.oraclecloud.internal
+datasource.username=ecra
+datasource.password=welcome1
+ 
+datasource.test.query=SQL SELECT * FROM databases

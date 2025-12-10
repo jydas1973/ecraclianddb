@@ -1,0 +1,10 @@
+{
+    "job_class": "oracle.exadata.ecra.scheduler.CmdRunner",
+    "type": "ONE-OFF",
+    "__c": "timeout in seconds",
+    "timeout": 10,
+    "target_server": "PRIMARY",
+    "__c": "O/S timezone where ECRA DB is running",
+    "planned_start": "2019-11-22 16:03:00",
+    "enabled": "Y"
+}

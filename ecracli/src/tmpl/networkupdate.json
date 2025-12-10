@@ -1,0 +1,27 @@
+{
+    "rackname" : "sea101111exd-d0-03-04-cl-04-06-clu01",
+    "nodes":[
+      {
+            "hostname" : "sea101111exdd003",
+            "client":{
+               "ip":"10.0.3.126",
+               "netmask":"255.255.255.0",
+               "vlantag":"1",
+               "gateway":"10.0.3.1",
+               "mac":"00:00:17:01:06:C3",
+               "standby_vnic_mac": "00:00:17:01:FF:81"
+            },
+            "backup":{
+               "ip":"10.0.4.80",
+               "netmask":"255.255.255.0",
+               "vlantag":"2",
+               "gateway":"10.0.4.1",
+               "mac":"00:00:17:01:B7:9F",
+               "standby_vnic_mac": "02:00:17:01:F9:80"
+            },
+            "vip": {
+                "ip": "10.0.3.124"
+             }
+      }  
+   ]
+} 

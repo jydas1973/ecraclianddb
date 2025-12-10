@@ -1,0 +1,11 @@
+{
+    "rackname" : "iad103714exd-d0-03-04-cl-04-06-clu01",
+    "keepInventoryReserved": "false",
+    "servers": [
+        {
+            "hostname": "iad103709exdd017",
+            "domainname": "iad103709exd.adminiad1.oraclevcn.com",
+            "hw_type" : "COMPUTE"
+        }
+  ]
+}

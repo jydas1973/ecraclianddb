@@ -1,0 +1,16 @@
+{
+  "exaunitID": "156",
+  "tenantID": "usquestintern35490",
+  "clusterID": "CLU10",
+  "dbSID": "orcl",
+  "dbVersion": "12.1.0.2",
+  "dbTemplate": "oltp",
+  "adminPassword": "",
+  "sshkey": "<INSERT RSA KEY>",
+  "sshcomment": "ECRA_PUB",
+  "backupDest": "BOTH",
+  "cloudStorageContainer": "https://storage.oraclecorp.com/v1/Storage-StorageEval01admin/JaaSBackup", 
+  "cloudStoragePassword": "", 
+  "cloudStorageUsername": "Storageadmin",
+  "timezone": "UTC"
+}

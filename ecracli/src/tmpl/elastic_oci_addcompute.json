@@ -1,0 +1,76 @@
+{
+  "clustername": "cl-wrxj3fta",
+  "rackname": "sea201207exd-d0-01-02-cl-01-03-clu01",
+  "customer_network": {
+    "timezone": "UTC",
+    "nodes": [
+      {
+        "vip": {
+          "hostname": "c10125s-kysem1-vip",
+          "domainname": "subnetexacs1.devvcn.oraclevcn.com",
+          "ip": "10.0.0.20"
+        },
+        "client": {
+          "hostname": "c10125s-kysem1",
+          "domainname": "subnetexacs1.devvcn.oraclevcn.com",
+          "ip": "10.0.0.18",
+          "netmask": "255.255.255.240",
+          "vlantag": null,
+          "gateway": "10.0.0.17",
+          "mac": "00:10:54:02:37:68",
+          "hw_node_id": 49,
+          "dom0_oracle_name": "sea201207exdd001",
+          "domu_oracle_name": "sea201207exddu0101"
+        },
+        "backup": {
+          "hostname": "c10125s-kysem1-backup",
+          "domainname": "subnetexacs2.devvcn.oraclevcn.com",
+          "ip": "10.0.0.34",
+          "netmask": "255.255.255.240",
+          "vlantag": "1",
+          "gateway": "10.0.0.33",
+          "mac": "00:00:17:01:AE:AD",
+          "hw_node_id": 49,
+          "dom0_oracle_name": "sea201207exdd001",
+          "domu_oracle_name": "sea201207exddu0101"
+        }
+      },
+      {
+        "vip": {
+          "hostname": "c10125s-kysem1-vip",
+          "domainname": "subnetexacs1.devvcn.oraclevcn.com",
+          "ip": "10.0.0.20"
+        },
+        "client": {
+          "hostname": "c10125s-kysem1",
+          "domainname": "subnetexacs1.devvcn.oraclevcn.com",
+          "ip": "10.0.0.18",
+          "netmask": "255.255.255.240",
+          "vlantag": null,
+          "gateway": "10.0.0.17",
+          "mac": "00:10:54:02:37:68",
+          "hw_node_id": 49,
+          "dom0_oracle_name": "sea201207exdd002",
+          "domu_oracle_name": "sea201207exddu0102"
+        },
+        "backup": {
+          "hostname": "c10125s-kysem1-backup",
+          "domainname": "subnetexacs2.devvcn.oraclevcn.com",
+          "ip": "10.0.0.34",
+          "netmask": "255.255.255.240",
+          "vlantag": "1",
+          "gateway": "10.0.0.33",
+          "mac": "00:00:17:01:AE:AD",
+          "hw_node_id": 49,
+          "dom0_oracle_name": "sea201207exdd002",
+          "domu_oracle_name": "sea201207exddu0102"
+        }
+      }
+    ]
+  },
+  "idemtoken": "bdc5cfb0-726c-4574-9230-7b61915c1d82",
+  "atp": {
+    "AutonomousDb": "N",
+    "provisionType": null
+  }
+}

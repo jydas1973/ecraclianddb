@@ -1,0 +1,20 @@
+{
+  "region": "",
+  "compartment_ocid": "",
+  "vault_id": "",
+  "vault_name": "",
+  "secrets": [
+    {
+      "secret_id": "",
+      "secret_name": "ecra-weblogic-admin"
+    },
+    {
+      "secret_id": "",
+      "secret_name": "ecra-weblogic-ops"
+    },
+    {
+      "secret_id": "",
+      "secret_name": "ecra-weblogic-sdi"
+    }
+  ]
+}

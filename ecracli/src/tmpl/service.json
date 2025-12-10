@@ -1,0 +1,321 @@
+{
+  "Config_Properties": {
+    "ATP_ADNAME": "GBTE:SEA-AD-2",
+    "CASPER_IP": "134.70.0.0/17",
+    "DIAG_EM_AGENT_HOST": "140.144.0.26",
+    "DIAG_EM_AGENT_PORT": "3872",
+    "DIAG_EM_HOST": "129.213.228.11",
+    "DIAG_EM_PASSWD": "<DIAG_EM_PWD>",
+    "DIAG_EM_PORT": "7803",
+    "DIAG_EM_USER": "sysman",
+    "DIAG_OSS_PASSWD": "FDD[U-a>8ZJ])7S>T#pG",
+    "DIAG_OSS_PROXY": "",
+    "DIAG_OSS_URL": "https://swiftobjectstorage.r1.oracleiaas.com/v1/dbaasexadatacustomersea1/tfa_bucket",
+    "DIAG_OSS_USER": "rudregowda.mallegowda@oracle.com",
+    "DOD_HOST": "",
+    "DOD_PORT": "",
+    "DOD_USER_NAME": "",
+    "DOD_USER_PASSWORD": "",
+    "ELASTIC_SEARCH_HOST": "",
+    "ELASTIC_SEARCH_PORT": "",
+    "ATP_OBSERVER_IMAGE": "ocid1.image.region1.sea.aaaaaaaaj26vezzkwwo2ickbrjx6dbg3zoxobwuyjgjw6ngibkcdkotai5pa"
+  },
+  "Identity": {
+     "AD1_ADMIN_VCN": {},
+     "AD2_ADMIN_VCN": {},
+     "AD3_ADMIN_VCN": {},
+     "CLIENT_TENANCY": {
+       "compartment_ocid": "ocid1.compartment.region1..aaaaaaaasbxnyqt65ywj33bttao2uz2abmrhy62g5lmwrn4kqswnzyoz6m7q",
+       "fingerprint": "ed:12:51:19:51:17:4f:02:69:ec:8b:51:fd:60:3e:a0",
+       "private_key_path": "/home/oracle/.oci/oci_api_key.pem",
+       "private_pem_key":"<INSERT PRIVATE KEY>",
+       "region": "us-seattle-1",
+       "tenancy_ocid": "ocid1.tenancy.oc1..aaaaaaaajl3p2iquu45w7kfydtigbkmwcoshrlyxjjv5yn3deux3fa6cyxda",
+       "user_ocid": "ocid1.user.region1..aaaaaaaawt55ucdamh5jxthmaulqc5e7bd5hb7apvre254vto5wxeyweyxbq"
+     },
+     "PEER_REGION": {},
+     "compartment_ocid": "ocid1.compartment.region1..aaaaaaaan7viwfsyanxkebhfu32q2dxapy3yha6hpkz5yqbsavjlj6k5hnia",
+     "fingerprint": "ed:12:51:19:51:17:4f:02:69:ec:8b:51:fd:60:3e:a0",
+     "private_key_path": "/home/oracle/.oci/oci_api_key.pem",
+     "private_pem_key":"<INSERT PRIVATE KEY>",
+     "region": "us-seattle-1",
+     "tenancy_ocid": "ocid1.tenancy.oc1..aaaaaaaajl3p2iquu45w7kfydtigbkmwcoshrlyxjjv5yn3deux3fa6cyxda",
+     "user_ocid": "ocid1.user.region1..aaaaaaaayfdivqdkgnxyhqvvenehyr4cz4rbya3slfkoqp463hclgnubu5kq"
+   },
+  "Network": {
+    "AD1_ECRA_CIDR_BLOCK": [],
+    "AD2_ECRA_CIDR_BLOCK": [],
+    "AD3_ECRA_CIDR_BLOCK": [],
+    "ADMIN_AD1_ROUTE_TABLE": [],
+    "ADMIN_AD1_TO_MGMT_LPG_GATEWAY": [],
+    "ADMIN_AD1_VCN": [],
+    "ADMIN_AD2_ROUTE_TABLE": [],
+    "ADMIN_AD2_TO_MGMT_LPG_GATEWAY": [],
+    "ADMIN_AD2_VCN": [],
+    "ADMIN_AD3_ROUTE_TABLE": [],
+    "ADMIN_AD3_TO_MGMT_LPG_GATEWAY": [],
+    "ADMIN_AD3_VCN": [],
+    "BASTION_SEC_LIST": [
+      {
+        "id": "ocid1.securitylist.oc1.sea.aaaaaaaakjmaaarji4s5z7fm6jwowvp3gbl7il3qkddswvlq2wuc4tdsufkq",
+        "name": "BastionSubnetSL",
+        "type": "oci_core_security_list"
+      }
+    ],
+    "BASTION_SUBNET": [
+      {
+        "availability_domain_name": "GBTE:SEA-AD-2",
+        "cidr_block": "140.144.0.64/29",
+        "id": "ocid1.subnet.oc1.sea.aaaaaaaapw3lrbg6eexkwwpc3jc5aboimbfftfst4madf3r5wl46rk4djlmq",
+        "name": "BastionSubnet1",
+        "type": "oci_core_subnet"
+      }
+    ],
+    "DNS_SEC_LIST": [
+      {
+        "id": "ocid1.securitylist.oc1.sea.aaaaaaaa256mbrskjezb3tmnpsn5sd37iglis43pxlhkpesnd33pi2h3w26q",
+        "name": "DNSSubnetSL",
+        "type": "oci_core_security_list"
+      }
+    ],
+    "DNS_SUBNET": [
+      {
+        "availability_domain_name": "GBTE:SEA-AD-2",
+        "cidr_block": "140.144.0.32/29",
+        "id": "ocid1.subnet.oc1.sea.aaaaaaaa5szxgwxhpxz4xmgpdhioatiwtr454fn2vfqkbtu5zsyutkceitjq",
+        "name": "DNSSubnet1",
+        "type": "oci_core_subnet"
+      }
+    ],
+    "DOD_SEC_LIST": [
+      {
+        "id": "ocid1.securitylist.oc1.sea.aaaaaaaav34g25jxczko7eifjnh7tgid4tq6iojkfnhjcctz6nnemgj2a3ka",
+        "name": "DoDSubnetSL",
+        "type": "oci_core_security_list"
+      }
+    ],
+    "DOD_SUBNET": [
+      {
+        "availability_domain_name": "GBTE:SEA-AD-2",
+        "cidr_block": "140.144.0.48/29",
+        "id": "ocid1.subnet.oc1.sea.aaaaaaaaekztrluoqjrnbtcnfihb6vjraj3udnnmtpvxtrk3pwnxpv5tzqda",
+        "name": "DoDSubnet1",
+        "type": "oci_core_subnet"
+      },
+      {
+        "availability_domain_name": "GBTE:SEA-AD-1",
+        "cidr_block": "140.144.0.56/29",
+        "id": "ocid1.subnet.oc1.sea.aaaaaaaai5ug7xuktb4nxynxf2eedqlntusjbettpja5t4orhqfazyr7jxda",
+        "name": "DoDSubnet2",
+        "type": "oci_core_subnet"
+      }
+    ],
+    "EM_AGENT_ROUTE_TABLE": [
+      {
+        "id": "ocid1.routetable.oc1.sea.aaaaaaaauhyohfdut6xv7vwaqgezrlssr7szghltkf7zoljw47jodr55n7fa",
+        "name": "EMSubnetRT",
+        "type": "oci_core_route_table"
+      }
+    ],
+    "EM_AGENT_SEC_LIST": [
+      {
+        "id": "ocid1.securitylist.oc1.sea.aaaaaaaa7k2bcbcpiuhkuxr6fcrzic4y3ymepgobm3u2lk4tihir3xnsig6a",
+        "name": "EMSubnetSL",
+        "type": "oci_core_security_list"
+      }
+    ],
+    "EM_AGENT_SUBNET": [
+      {
+        "availability_domain_name": "GBTE:SEA-AD-2",
+        "cidr_block": "140.144.0.24/29",
+        "id": "ocid1.subnet.oc1.sea.aaaaaaaaciwy4r5db4umpqdlrxqfgwbyd5x2mwip5bi2pf2a5xmx6to35urq",
+        "name": "EMSubnet1",
+        "type": "oci_core_subnet"
+      }
+    ],
+    "LOGSTASH_SEC_LIST": [
+      {
+        "id": "ocid1.securitylist.oc1.sea.aaaaaaaapgalphjfsd5etlfcwixbenpn4dzz7rqabpymzvign2qyamvuh6sq",
+        "name": "LogstashSubnetSL",
+        "type": "oci_core_security_list"
+      }
+    ],
+    "LOGSTASH_SUBNET": [
+      {
+        "availability_domain_name": "GBTE:SEA-AD-2",
+        "cidr_block": "140.144.0.16/29",
+        "id": "ocid1.subnet.oc1.sea.aaaaaaaa5l4wt2qu5wkslac33cycg44ihwnkjwz2ls3eihkqpzjizsno6gta",
+        "name": "LogstashSubnet1",
+        "type": "oci_core_subnet"
+      }
+    ],
+    "MGMT_BACKUP_SUBNET_GSL": [
+      {
+        "id": "ocid1.securitylist.oc1.sea.aaaaaaaahl2ghz64633njyte6rgqlbhassqa6khi7vfik4v6ctl7wsggcd7a",
+        "name": "MgmtBackupSubnetGSL",
+        "type": "oci_core_security_list"
+      }
+    ],
+    "MGMT_GLOBAL_SEC_LIST": [
+      {
+        "id": "ocid1.securitylist.oc1.sea.aaaaaaaaeyz76q73rssx3wppdo4rrnua6qr7yvu7glpia73f6cgeeojiljqa",
+        "name": "GlobalSL",
+        "type": "oci_core_security_list"
+      }
+    ],
+    "MGMT_INTERNET_GATEWAY": [
+      {
+        "id": "ocid1.internetgateway.oc1.sea.aaaaaaaax4plohul7xuaof4pf4gojrqijjedt6d7pexzbh7yzynmsokmin3a",
+        "name": "MgmtVCNDevPR4IG",
+        "type": "oci_core_internet_gateway"
+      }
+    ],
+    "MGMT_ROUTE_TABLE": [
+      {
+        "id": "ocid1.routetable.oc1.sea.aaaaaaaahvfmenizol5n5dugswbkib6eo47wn7fls4hulssn7vgw2l57dc5q",
+        "name": "MgmtVCNDevPR4RT",
+        "type": "oci_core_route_table"
+      }
+    ],
+    "MGMT_TO_ADMIN_AD1_LPG_GATEWAY": [],
+    "MGMT_TO_ADMIN_AD2_LPG_GATEWAY": [],
+    "MGMT_TO_ADMIN_AD3_LPG_GATEWAY": [],
+    "MGMT_TO_PEER_DRG": [],
+    "MGMT_VCN": {
+      "cidr_block": "140.144.0.0/23",
+      "id": "ocid1.vcn.oc1.sea.aaaaaaaaguvqycdg5cj5ob3nh5cyfiwwzmxwjc26bhm6ctkn7n3xevon5hja",
+      "name": "MgmtVCNDevPR4",
+      "type": "oci_core_virtual_network"
+    },
+    "PEER_REGION_MGMT_VCN": [],
+    "PEER_ROUTE_TABLE": [],
+    "PEER_TO_MGMT_DRG": [],
+    "TFA_DB_SEC_LIST": [
+      {
+        "id": "ocid1.securitylist.oc1.sea.aaaaaaaa5vd5xdeqozzoez2lilhtj7mudqm5r6hll64ayb4ju3yrgev3pipq",
+        "name": "TFADBSubnetSL",
+        "type": "oci_core_security_list"
+      }
+    ],
+    "TFA_DB_SUBNET": [
+      {
+        "availability_domain_name": "GBTE:SEA-AD-2",
+        "cidr_block": "140.144.0.8/29",
+        "id": "ocid1.subnet.oc1.sea.aaaaaaaauxvsq5rm73rzmmtoehd4ivjpisynzohzzq37oos6f7ot4zu5s7lq",
+        "name": "TFADBSubnet1",
+        "type": "oci_core_subnet"
+      }
+    ],
+    "TFA_WEB_SEC_LIST": [
+      {
+        "id": "ocid1.securitylist.oc1.sea.aaaaaaaadrein6xeg4ngymiqvfzzn5kgxzmh2wqmnwz2ebfhruhowu5nu6fq",
+        "name": "TFAWebSubnetSL",
+        "type": "oci_core_security_list"
+      }
+    ],
+    "TFA_WEB_SUBNET": [
+      {
+        "availability_domain_name": "GBTE:SEA-AD-2",
+        "cidr_block": "140.144.0.0/29",
+        "id": "ocid1.subnet.oc1.sea.aaaaaaaacyjjskucuc22wljb2nwakk5yuoflfoj4wd6e5cj65s4wqzqzqoiq",
+        "name": "TFAWebSubnet1",
+        "type": "oci_core_subnet"
+      }
+    ]
+  },
+ "Resources": {
+    "DNS": [
+      {
+        "hostname": "HostDNS1",
+        "id": "ocid1.instance.region1.sea.abzwkljssgetoh6fpi2b7h3xfy3clmzpu3q5nvrtm3k2wrx2jbssosxrztlq",
+        "private_ip": "140.144.0.34",
+        "private_key":"<INSERT PRIVATE KEY>",        
+        "public_ip": ""
+      },
+      {
+        "hostname": "HostDNS2",
+        "id": "ocid1.instance.region1.sea.abzwkljs763epzmll6jjpiw5lnia757wudws2276cwgiza2ii64qyn5ckoea",
+        "private_ip": "140.144.0.35",
+        "private_key":"<INSERT PRIVATE KEY>",        
+        "public_ip": ""
+      }
+    ],
+    "DOD_DB": [
+      {
+        "hostname": "HostDoDDB1",
+        "id": "ocid1.instance.region1.sea.abzwkljs35mjmtnd56eiltmcl26k7acurtmwlw3tie3h2bzobx63neyb2h2a",
+        "private_ip": "140.144.0.50",
+        "private_key":"<INSERT PRIVATE KEY>",
+        "public_ip": ""
+      }
+    ],
+    "DOD_WEB": [
+      {
+        "hostname": "HostDoDWeb1",
+        "id": "ocid1.instance.region1.sea.abzwkljsf5to7wuiwf3sdm4ax4mb6mwtkmkdpkoa3n4dlghywufibxebg2oa",
+        "private_ip": "140.144.0.51",
+        "private_key":"<INSERT PRIVATE KEY>",
+        "public_ip": ""
+      }
+    ],
+    "EM_AGENT": [
+      {
+        "hostname": "HostEMRemoteAgent1",
+        "id": "ocid1.instance.region1.sea.abzwkljsezp7ggsyxskgncgzd2ky5rhjesfuw7ozjsedq6z7ppzgkaph22na",
+        "private_ip": "140.144.0.26",
+        "private_key":"<INSERT PRIVATE KEY>",
+        "public_ip": "129.213.231.59"
+      }
+    ],
+    "FAKE_BASTION": [
+      {
+        "hostname": "FakeBastion1",
+        "id": "ocid1.instance.region1.sea.abzwkljssbbq73g6e4t2t4gwkzjv4uoju42h3r7yjn4ijbi64xszpvkkflxq",
+        "private_ip": "140.144.0.67",
+        "private_key":"<INSERT PRIVATE KEY>",
+        "public_ip": "129.213.229.35"
+      }
+    ],
+    "LOGSTASH": [
+      {
+        "hostname": "HostLogstash1",
+        "id": "ocid1.instance.region1.sea.abzwkljs422rkopjszd46uf2tqmeir2felxjt3gm5s7k5iav7abu75u7tzhq",
+        "private_ip": "140.144.0.18",
+        "private_key":"<INSERT PRIVATE KEY>",
+        "public_ip": ""
+      }
+    ],
+    "SERVICE_BASTION": [
+      {
+        "hostname": "ServiceBastion1",
+        "id": "ocid1.instance.region1.sea.abzwkljsk47nxey2daeeb5w4z3qeg4sf4pahgkyplb7nfchvn2jkqjyjlwwq",
+        "private_ip": "140.144.0.66",
+        "private_key":"<INSERT PRIVATE KEY>",
+        "public_ip": "129.213.231.199"
+      }
+    ],
+    "TFA_DB": [
+      {
+        "hostname": "HostTFADB1",
+        "id": "ocid1.instance.region1.sea.abzwkljsjugazlisnqzy6ep5yzkgx3wr2h4crc4cetrh4imnyr4g4jlqtbjq",
+        "private_ip": "140.144.0.10",
+        "private_key":"<INSERT PRIVATE KEY>",
+        "public_ip": ""
+      }
+    ],
+    "TFA_PROCESSOR": [],
+    "TFA_WEB": [
+      {
+        "hostname": "HostTFAWeb1",
+        "id": "ocid1.instance.region1.sea.abzwkljsptxcy7cvnmxsla2mav2w5h37ol5uu4rcn2u2o4lwk6qsfwshz3fq",
+        "private_ip": "140.144.0.2",
+        "private_key":"<INSERT PRIVATE KEY>",
+        "public_ip": ""
+      }
+    ]
+  }
+}
+
+
+
+

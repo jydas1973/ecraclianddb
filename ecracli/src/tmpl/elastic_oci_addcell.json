@@ -1,0 +1,9 @@
+{
+   "rackname": "sea201207exd-d0-01-02-cl-01-03-clu01",
+   "idemtoken": "bdc5cfb0-726c-4574-9230-7b61915c1d82",
+   "cellnodes": [
+     {
+        "hostname": "sea200125exdcel01"
+     }
+   ]
+}

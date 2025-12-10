@@ -1,0 +1,22 @@
+{
+  "operation": "updateAllocation", 
+  "clusterAllocations": [
+    {
+      "hostName": "iad103709exdd018.iad103709exd.adminiad1.oraclevcn.com",
+      "cores" : 10 
+    },
+    {
+      "hostName": "iad103709exdd017.iad103709exd.adminiad1.oraclevcn.com",
+      "cores" : 10
+    },
+    {
+      "hostName": "iad103709exdd016.iad103709exd.adminiad1.oraclevcn.com",
+      "cores" : 10
+    },
+    {
+      "hostName": "iad103709exdd016.iad103709exd.adminiad1.oraclevcn.com",
+      "cores" : 10
+    }
+  ]
+}
+

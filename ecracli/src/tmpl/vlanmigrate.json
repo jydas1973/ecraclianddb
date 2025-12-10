@@ -1,0 +1,16 @@
+{
+   "rackname" : "sea101111exd-d0-03-04-cl-04-06-clu01",
+   "nodes": [
+        {
+            "hostname":"sea101111exdd003.sea101111exd.adminsea2.oraclevcn.com",
+            "domu_hostname":"sea101111exddu0301.sea101111exd.adminsea2.oraclevcn.com",
+            "client":{
+                "vlantag": "1"
+            },
+            "backup":{
+                "vlantag": "2"
+            }
+        }
+     ]
+}
+

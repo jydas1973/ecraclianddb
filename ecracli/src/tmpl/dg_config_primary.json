@@ -1,0 +1,20 @@
+{
+    "remote_cluster": {
+    "scannames": [{
+        "ip": "dummy10.252.165.201",
+        "name": "dummyslcs08vm05-scan9-v216"
+    }],
+    "vms": [{
+        "ip": "dummy10.252.165.228",
+        "fdn": "dummyslcs08adm05vm09-v266.usdv1.oraclecloud.com"
+    }, {
+        "ip": "dummy10.252.165.229",
+        "fdn": "dummyslcs08adm06vm09-v266.usdv1.oraclecloud.com"
+    }]
+    },
+    "ssh_key": {
+         "public": "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAyCpXrWY/CC5JWN+E8AjLbjEn61H/lKihi9o+tIjJcfk3dcKEwodWgAoza+8rXy++sj5xI+KxI5tQ+Xhe7m7RxXXHV4RFksoWSs/lZjOc1e/F6VfEwCpzisQu39Hw3Xc/7UnZ450hj4dbz1kTmN8F/fRGeImoJfSeAUY277DN7nAxtgP/Rj0YkHI2VeepcZ6JQMSL6XfzQCk4zApVFbd7CoyXRd1EV55WYxDJ/zImrptddCLXtvcXxwOmtl3kGA2kp7FTgSUIiOejiuFIocGNR4/sW4ydcMY5W9ygv996xQMIcT1b4Cu8BPaNdlPHTsQ/A+7N45FY4mnxuCbOKHd2oQ== nitishgu@den01drn",
+         "private": ""
+    }
+}
+

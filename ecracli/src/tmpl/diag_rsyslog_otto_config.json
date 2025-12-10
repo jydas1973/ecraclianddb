@@ -1,0 +1,12 @@
+{
+    "otto_fn_url": "",
+    "otto_fn_id": "",
+    "use_instance_principal": true,
+    "user_principal_info": {
+        "user": "",
+        "tenancy": "",
+        "key_file_content": "",
+        "fingerprint": "",
+        "region": ""
+    }
+}

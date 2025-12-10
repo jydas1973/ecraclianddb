@@ -1,0 +1,19 @@
+{                                                                                                                                                                                                                                        
+        "hcProfileName": "custom healthcheck",                                                                                                                                                                                           
+                                                                                                                                                                                                                                         
+        "hcCheckList": {                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                         
+                "alertlevel" : "all",                                                                                                                                                                                                    
+                                                                                                                                                                                                                                         
+                "target": ["dom0","cell","controlplane"],                                                                                                                                                                                
+                                                                                                                                                                                                                                         
+                "tags": [],                                                                                                                                                                                                              
+                                                                                                                                                                                                                                         
+                "exclude": [],                                                                                                                                                                                                           
+                                                                                                                                                                                                                                         
+                "include": ["ImageVersion","CPSVersion"]
+
+        },
+
+     "hcResultLevel": "recommend"
+}

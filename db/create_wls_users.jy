@@ -1,0 +1,35 @@
+from java.io import FileInputStream
+import os
+
+loc  = os.environ["ECRA_WEBLOGIC"]
+
+propInputStream = FileInputStream(loc)
+config = Properties()
+config.load(propInputStream)
+
+domainName    = config.get("domain.name")
+adminURL      = config.get("admin.url")
+adminUserName = config.get("admin.userName")
+adminPassword = config.get("admin.password")
+
+connect(adminUserName, adminPassword, adminURL)
+
+serverConfig()
+print "[Oracle DBaaS][ECRA][Creating users]"
+
+password = "welcome1" 
+group = "ecra-clients"
+users = ['sdi', 'sm']
+
+atnr=cmo.getSecurityConfiguration().getDefaultRealm().lookupAuthenticationProvider('DefaultAuthenticator')
+
+print "[Oracle DBaaS][ECRA][GROUP]"+ group 
+atnr.createGroup(group, group)
+
+for user in users:
+    print "[Oracle DBaaS][ECRA][GROUP]" + user
+    atnr.createUser(user, password, user)
+    atnr.addMemberToGroup(group, user)
+
+print "[Oracle DBaaS][ECRA][END]"
+

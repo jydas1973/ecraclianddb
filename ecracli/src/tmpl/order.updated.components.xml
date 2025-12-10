@@ -1,0 +1,38 @@
+<OrderComponents>
+    <serviceComponent>
+        <component_id>7503458</component_id>
+        <component_parameter>
+            <key>SERVICE_PART_DESCRIPTION</key>
+            <value>Oracle Exadata Cloud Service - Additional OCPU's - OCPU per
+                  Month</value>
+        </component_parameter>
+        <component_parameter>
+            <key>GSI_ORDER_LINE_ID</key>
+            <value>1391898108</value>
+        </component_parameter>
+        <component_parameter>
+            <key>METRIC_NAME</key>
+            <value>OCPU PER MONTH</value>
+        </component_parameter>
+        <component_parameter>
+            <key>LICENSE_PART_DESCRIPTION</key>
+            <value>Oracle Exadata Cloud Service - Additional OCPU's - OCPU per
+                  Month Product</value>
+        </component_parameter>
+        <component_parameter>
+            <key>OCPU PER MONTH</key>
+            <value>%CORES_NUMBER%</value>
+        </component_parameter>
+        <component_parameter>
+            <key>IS_ADDITIONAL_INSTANCE</key>
+            <value>N</value>
+        </component_parameter>
+        <component_parameter>
+            <key>IS_BASE_SERVICE_COMPONENT</key>
+            <value>N</value>
+        </component_parameter>
+        <service_component_id>B81636</service_component_id>
+        <start_date>2015-03-30T07:00:00Z</start_date>
+        <end_date>2018-03-29T07:00:00Z</end_date>
+    </serviceComponent>
+</OrderComponents>

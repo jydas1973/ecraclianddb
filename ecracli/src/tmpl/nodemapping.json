@@ -1,0 +1,13 @@
+{
+    "nodemapping": [
+        {
+            "hostname": "sea101602exdd001",
+            "mdid" : 1
+        },
+        {
+            "hostname": "sea101602exdd002",
+            "mdid" : 1
+        }
+    ]
+}
+

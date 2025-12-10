@@ -1,0 +1,37 @@
+{
+    "fabricname": "SEA200041QFAB",
+    "totalDuration": 45,
+    "notificationDuration" : 14,
+    "currentMdId": -1,
+    "mdResourceThreshold": [
+        {
+            "hwmodel": "X8M-2",
+            "resources": {
+                "cpu": {
+                    "value": 500
+                },
+                "memory": {
+                    "value": 16214696919040
+                },
+                "storageLocal": {
+                    "value": 83562883710976
+                }
+            }
+        },
+        {
+            "hwmodel": "X9M-2",
+            "resources": {
+                "cpu": {
+                    "value": 500
+                },
+                "memory": {
+                    "value": 16214696919040
+                },
+                "storageLocal": {
+                    "value": 83562883710976
+                }
+            }
+        }
+    ]
+}
+

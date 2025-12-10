@@ -1,0 +1,22 @@
+{
+    "totalDuration": 90,
+    "notificationDuration" : 28,
+    "currentMdId": 0,
+    "mdResourceThreshold": [
+        {
+            "hwmodel": "X10M-2",
+            "resources": {
+                "cpu": {
+                    "value": 500
+                },
+                "memory": {
+                    "value": 16214696919040
+                },
+                "storageLocal": {
+                    "value": 83562883710976
+                }
+            }
+        }
+    ]
+}
+

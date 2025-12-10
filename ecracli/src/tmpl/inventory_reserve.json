@@ -1,0 +1,11 @@
+{
+    "rackname": "sea201109exd-d0-01-02-cl-01-03-clu01", 
+    "exadataInfrastructureId": "testdbsystem",
+    "servers": [
+        {
+	    "hw_type": "CELL", 
+	    "model": "X8M-2", 
+	    "quantity" : 2
+	}
+    ]
+}

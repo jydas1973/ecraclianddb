@@ -1,0 +1,12 @@
+{
+  "clusterPlan": [
+    {
+      "exaunitId": 1,
+      "share": "1"
+    },
+    {
+      "exaunitId": 2,
+      "share": "2"
+    }
+  ]
+}

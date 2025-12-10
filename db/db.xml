@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<!--  $Header: ecs/ecra/db/db.xml /main/2 2017/03/05 16:47:41 nkedlaya Exp $ -->
+
+<!-- 
+ Copyright (c) 2015, 2017, Oracle and/or its affiliates. All rights reserved.
+
+   NAME
+     db.xml - <one-line expansion of the name>
+
+   DESCRIPTION
+     <short description of component this file declares/defines>
+
+   NOTES
+     <other useful comments, qualifications, etc.>
+
+   MODIFIED   (MM/DD/YY)
+   nkedlaya    03/03/17 - add pl/sql packages to create in ecra db
+   angfigue    02/16/15 - Database configuration file
+   angfigue    02/16/15 - Creation
+
+-->
+
+<database>
+  <!-- DATABASE CONFIGURATION -->
+  <pdb name="pdb1"/>
+  <tablespace name="ecra_db"/>
+  <username   name="ecra" password="welcome1"/>
+  <!-- ADMIN SCRIPTS -->
+  <!-- Just add a field with the script_i where i is the index of the script
+       the populator assitant will take all scripts-->
+  <sql name="create_user.sql"   action="cuser"  />
+  <sql name="create_tables.sql" action="ctables"/>
+  <sql name="ecra_pkg.pls" action="cpls"/>
+  <sql name="ecra_pkg.plb" action="cplb"/>
+
+</database>

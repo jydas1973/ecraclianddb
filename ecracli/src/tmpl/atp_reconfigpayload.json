@@ -1,0 +1,99 @@
+{
+    "backup_disk": false,
+    "clustername": "cl-5f2rl4yq",
+    "cores": 92,
+    "createsparse": false,
+    "customer_network": {
+        "network_services": {
+            "dns": [
+                "169.254.169.254"
+            ],
+            "ntp": [
+                "169.254.169.254"
+            ]
+        },
+        "nodes": [
+            {
+                "backup": {
+                    "dom0_oracle_name": "sea201207exdd003",
+                    "domainname": "s1549424167643.mgmtvcndevpr4.oraclevcn.com",
+                    "domu_oracle_name": "sea201207exddu0301",
+                    "gateway": "140.144.1.241",
+                    "hostname": "host-924nt1-backup",
+                    "hw_node_id": 3,
+                    "ip": "140.144.1.242",
+                    "mac": "02:00:17:01:BD:2F",
+                    "netmask": "255.255.255.248",
+                    "vlantag": "1"
+                },
+                "client": {
+                    "dom0_oracle_name": "sea201207exdd003",
+                    "domainname": "o1549423917906.v1549423916681.oraclevcn.com",
+                    "domu_oracle_name": "sea201207exddu0301",
+                    "gateway": "10.0.0.1",
+                    "hostname": "host-924nt1",
+                    "hw_node_id": 3,
+                    "ip": "10.0.0.2",
+                    "mac": "00:10:0f:40:e5:ab",
+                    "netmask": "255.255.255.240",
+                    "vlantag": null
+                },
+                "vip": {
+                    "domainname": "o1549423917906.v1549423916681.oraclevcn.com",
+                    "hostname": "host-924nt1-vip",
+                    "ip": "10.0.0.4"
+                }
+            },
+            {
+                "backup": {
+                    "dom0_oracle_name": "sea201207exdd004",
+                    "domainname": "s1549424167643.mgmtvcndevpr4.oraclevcn.com",
+                    "domu_oracle_name": "sea201207exddu0401",
+                    "gateway": "140.144.1.241",
+                    "hostname": "host-924nt2-backup",
+                    "hw_node_id": 4,
+                    "ip": "140.144.1.243",
+                    "mac": "02:00:17:01:3F:89",
+                    "netmask": "255.255.255.248",
+                    "vlantag": "1"
+                },
+                "client": {
+                    "dom0_oracle_name": "sea201207exdd004",
+                    "domainname": "o1549423917906.v1549423916681.oraclevcn.com",
+                    "domu_oracle_name": "sea201207exddu0401",
+                    "gateway": "10.0.0.1",
+                    "hostname": "host-924nt2",
+                    "hw_node_id": 4,
+                    "ip": "10.0.0.3",
+                    "mac": "00:10:b5:68:b1:cb",
+                    "netmask": "255.255.255.240",
+                    "vlantag": null
+                },
+                "vip": {
+                    "domainname": "o1549423917906.v1549423916681.oraclevcn.com",
+                    "hostname": "host-924nt2-vip",
+                    "ip": "10.0.0.5"
+                }
+            }
+        ],
+        "scan": {
+            "hostname": "host-924nt-scan.o1549423917906.v1549423916681.oraclevcn.com",
+            "ips": [
+                "10.0.0.6",
+                "10.0.0.7",
+                "10.0.0.8"
+            ],
+            "port": 1521
+        },
+        "timezone": "UTC"
+    },
+    "grid_version": "v122",
+    "idemtoken": "07654cb1-e5be-42e9-9946-72819ebd63bb",
+    "atp": {
+       "AutonomousDb": "Y",
+       "dbSystemId": "ocid1.autonomousdbsystem.oc1.sea.abzwkljs54uun6mwdoxsim6gkqtimllfdaheusblozjcwtt6eropucms2vga"
+    },
+    "purchasetype": "metered",
+    "rackname": "sea201207exd-d0-03-04-cl-04-06-clu01"
+}
+

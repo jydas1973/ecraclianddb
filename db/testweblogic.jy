@@ -1,0 +1,25 @@
+connect('weblogic', 'welcome1', 't3://localhost:7001')
+edit()
+startEdit()
+cd('SecurityConfiguration/base_domain')
+set('EnforceValidBasicAuthCredentials','false')
+save()
+activate()
+
+serverRuntime()
+dsMBeans = cmo.getJDBCServiceRuntime().getJDBCDataSourceRuntimeMBeans()
+ds_name = "rest_api"
+print 'sanity check'
+print "-------------------------------------"
+for ds in dsMBeans:
+    if (ds_name == ds.getName()):
+        print 'Data source name :'+ds.getName()
+        print 'Data source state:' +ds.getState()
+        print 'Active conns     :' + str(ds.getCurrCapacity())
+        unittest = ds.testPool()
+        if not unittest:
+            print 'Test             :Success'
+        else:
+            print "Test             :Failed"
+            print unittest
+print "--------------------------------------"

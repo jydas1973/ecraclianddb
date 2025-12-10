@@ -1,0 +1,9 @@
+{
+    "job_class": "oracle.exadata.ecra.scheduler.CmdRunner",
+    "job_cmd": "ls",
+    "type": "RECURRENT",
+    "__c": "interval in seconds. should be >= 60 and multiple of 60",
+    "interval": 600,
+    "target_server": "PRIMARY",
+    "enabled": "Y"
+}

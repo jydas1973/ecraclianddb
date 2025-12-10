@@ -1,0 +1,77 @@
+#!/bin/bash
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+LOG_DIR=$DIR/log
+DEBUG_LOG_DIR=$LOG_DIR/debug
+if [ ! -x $LOG_DIR ]; then
+    mkdir -p $LOG_DIR
+fi
+if [ ! -x $DEBUG_LOG_DIR ]; then
+    mkdir -p $DEBUG_LOG_DIR
+fi
+_LOG="$LOG_DIR/ecracli-wrapper.log"
+echo "[INFO ] Date: $(date)" >> $_LOG
+echo "[INFO ] DIR: $DIR" >> $_LOG
+echo "[INFO ] PWD: $PWD" >> $_LOG
+
+# are we on the view folder structure?
+if [ ! -z "$ADE_VIEW_ROOT" ] && [[ "$(realpath $DIR)" =~ "$(realpath $ADE_VIEW_ROOT)" ]] ; then
+    # then use or install python in the view in $ADE_VIEW_ROOT/ecs/ecra/ecracli/bin/python
+    if [ -x $DIR/../bin/python/bin/python ] ; then
+        echo "[INFO ] venv is already installed." >> $_LOG
+        _PYTHON_BIN=$DIR/../bin/python/bin/python
+    else
+        if [ -e $ADE_PRODUCT_ROOT/exacloud/bin/py3_venv.sh ] ; then
+            echo "[INFO ] Deleting old python dir if exists" >> $_LOG
+            rm -rf "$DIR/python"
+            echo "[INFO ] Installing Python."  >> $_LOG
+            rm -rf $DIR/../bin/python
+            $ADE_PRODUCT_ROOT/exacloud/bin/py3_venv.sh -install $DIR/../bin/python &>/dev/null
+            _PYTHON_BIN=$DIR/../bin/python/bin/python
+        else
+            echo "[ERROR] Can't find python and it was not possible to install it." >> $_LOG
+            exit 1
+        fi
+    fi
+ 
+else
+    # we are not in the view folder structure, we should have python installer in our ecracli folder
+    # otherwise we couldn't continue
+    # also will check for defusedxml library
+    python_exists=false
+    defused_exists=false
+    if [ -x $DIR/python/bin/python ]; then
+        echo "[INFO ] venv is already installed." >> $_LOG
+        python_exists=true
+        python_config=`cat $DIR/python/pyvenv.cfg | grep version | grep -E -o '[0-9].[0-9]*'`
+        python_v=`$DIR/python/bin/python -V | grep -E -o '[0-9].[0-9]*'`
+        if  find  $DIR/python/ -iname 'defuse*' | grep -q .; then
+                defused_exists=true
+                _PYTHON_BIN=$DIR/python/bin/python
+        fi
+    fi
+
+    if [ $python_exists == false ] || [ $defused_exists == false ] || [ "$python_config" != "$python_v" ]; then
+        if [ -e $DIR/bin/py3_venv.sh ] ; then
+            echo "[INFO ] Deleting old python dir if exists" >> $_LOG
+            rm -rf "$DIR/python"
+            echo "[INFO ] Installing Python."  >> $_LOG
+            $DIR/bin/py3_venv.sh -install $DIR/python &>/dev/null
+            _PYTHON_BIN=$DIR/python/bin/python
+        else
+            echo "[ERROR] Can't find python and it was not possible to install it." >> $_LOG
+            exit 1
+        fi
+    fi
+
+fi
+
+echo -n "[INFO ] Python Version: "  `$_PYTHON_BIN -V`   >> $_LOG
+echo "[INFO ] Python Location:  $_PYTHON_BIN " >> $_LOG
+ 
+#Set the Envoriment variables for Python libraries
+export PYTHON_FOLDER=$DIR/python
+export PYTHONPATH=${PYTHON_FOLDER}:${PYTHON_FOLDER}/lib/python3.*
+export LD_LIBRARY_PATH=${PYTHON_FOLDER}/lib:${PYTHON_FOLDER}/lib64
+$_PYTHON_BIN $DIR/ecracli.py $*
+#printing exit code from python code
+exit $?

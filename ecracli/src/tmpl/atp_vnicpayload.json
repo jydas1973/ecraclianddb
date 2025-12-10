@@ -1,0 +1,42 @@
+{
+ "dbSystemId" : "ocid1.autonomousdbsystem.oc1.sea.abzwkljslnc7xyraotsc7uveml3wkh6t27psdwki3fl3lfm353qtnctqah5q",
+ "region" : "r1_region",
+ "shape" : "quarter",
+ "rackname" : "sea200220exd-d0-01-02-cl-01-03-clu01",
+ "subnet_cidr" : "172.16.0.8/29",
+ "subnet_ocid" : "ocid1.subnet.oc1.sea.aaaaaaaamzazfi4kcuqyg7wgroxcxh76tohsv5rgsntr4zt6jzjedtzhlxwq",
+ "subnet_fqdn" : "devsnetbc1220.ociteamvcn.oraclevcn",
+ "vnics" : [ 
+    {   
+      "vmname"        : "sea2220c1bk1",
+      "macaddress"    : "02:00:17:01:99:3C",
+      "vnic_ocid"     : "ocid1.vnic.oc1.sea.abzwkljsbdtbfduh5yijgmhtk4cm4b2mxfsdjnr4ffl6moosuqr2y2mcpuoa",
+      "scanip"        : "172.16.0.14",
+      "privateip"     : "172.16.0.10",
+      "nodevip"       : "172.16.0.12",
+      "scan_hostname" : "sea2220c1bk-scan1",
+      "vnic_hostname" : "sea2220c1bk1",
+      "vip_hostname"  : "sea2220c1bk1-vip"
+    },
+    {  
+      "vmname"        : "sea2220c1bk2",
+      "macaddress"    : "02:00:17:01:CE:B5",
+      "vnic_ocid"     : "ocid1.vnic.oc1.sea.abzwkljsgodtbpx5r344okgmu65o5wmvnhlltsdu75c44aqoo7xmsupzovra",
+      "scanip"        : "", 
+      "privateip"     : "172.16.0.11",
+      "nodevip"       : "172.16.0.13",
+      "scan_hostname" : "",
+      "vnic_hostname" : "sea2220c1bk2",
+      "vip_hostname"  : "sea2220c1bk2-vip"
+    }
+ ],
+ "ecs_properties" : {
+   "ATP_OM_VCNID" : "",
+   "ATP_OM_GWOCID" : "",
+   "ATP_OM_SECRULEOCID" : "",
+   "ATP_R1_ADNAME" : "",
+   "ATP_RUNTIME_ENVIRONMENT" : "",
+   "ATP_OM_CONFIGPATH" : "",
+   "CASPER_IP" : ""
+ }
+}

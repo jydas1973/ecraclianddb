@@ -1,0 +1,5795 @@
+{
+  "heartbeat": {
+    "get": {
+      "mandatory": [],
+      "optional": []
+    },
+    "exadata": {
+      "mandatory": [
+        "tenant_ocid",
+        "exadata_ocid"
+      ],
+      "optional": []
+    },
+    "enableScheduler": {
+      "mandatory": [
+        "heartbeatEnabled"
+      ],
+      "optional": []
+    }
+  },
+  "properties": {
+    "get": {
+      "mandatory": [],
+      "optional": [
+        "type"
+      ]
+    },
+    "put": {
+      "mandatory": [
+        "name"
+      ],
+      "optional": [
+        "value",
+        "description"
+      ]
+    },
+    "gettypes": {
+      "mandatory": [],
+      "optional": []
+    }
+  },
+  "capacity": {
+    "configureExascale": {
+      "mandatory": [
+        "infraOcid",
+        "totalxsGB"
+      ],
+      "optional": [
+        "idemtoken",
+        "vmstoragexsGb"
+      ]
+    },
+    "register": {
+      "mandatory": [
+        "exadata_id",
+        "tmpl_xml"
+      ],
+      "optional": []
+    },
+    "deregister": {
+      "mandatory": [
+        "exadata_id"
+      ],
+      "optional": [
+        "delete_inventory"
+      ]
+    },
+    "reserve": {
+      "mandatory": [
+        "idemtoken"
+      ],
+      "optional": [
+        "racksize",
+        "exadata_size",
+        "exadata_id",
+        "model",
+        "location",
+        "AutonomousDb",
+        "atp",
+        "provisionType",
+        "clustertag",
+        "dbSystemId",
+        "dom0_bonding",
+        "fabricname",
+        "mvmbonding",
+        "sitegroup",
+        "pdit"
+      ]
+    },
+    "move": {
+      "mandatory": [
+        "racksize",
+        "destinationPool"
+      ],
+      "optional": [
+        "model",
+        "numberOfRacks",
+        "rackname",
+        "clustertag"
+      ]
+    },
+    "release": {
+      "mandatory": [
+        "exadata_id"
+      ],
+      "optional": []
+    },
+    "list": {
+      "mandatory": [],
+      "optional": [
+        "racksize",
+        "exadata_size",
+        "model",
+        "location",
+        "status",
+        "exadata_id",
+        "atp"
+      ]
+    },
+    "get": {
+      "mandatory": [],
+      "optional": [
+        "exadata_size",
+        "exadata_id",
+        "model",
+        "status"
+      ]
+    },
+    "infrav2backfill": {
+      "mandatory": [
+        "rackname",
+        "exadataInfrastructureId"
+      ],
+      "optional": [
+        "tenancyocid"
+      ]
+    },
+    "getavailability": {
+      "mandatory": [],
+      "optional": [
+        "type",
+        "detailed",
+        "raw"
+      ]
+    },
+    "getfilesystemdefinitions": {
+      "mandatory": [
+        "model"
+      ],
+      "optional": [
+        "exaOcid",
+        "rackname",
+        "adbd",
+        "svm"
+      ]
+    },
+    "compatibility": {
+      "addmatrix": {
+        "mandatory": [
+          "osversion",
+          "exaversion",
+          "hwmodel",
+          "giversion",
+          "servicetype",
+          "status"
+        ],
+        "optional": []
+      },
+      "updatematrix": {
+        "mandatory": [
+          "id"
+        ],
+        "optional": [
+          "osversion",
+          "exaversion",
+          "hwmodel",
+          "giversion",
+          "status",
+          "servicetype"
+        ]
+      },
+      "disablematrix": {
+        "mandatory": [
+          "id"
+        ],
+        "optional": []
+      },
+      "enablematrix": {
+        "mandatory": [
+          "id"
+        ],
+        "optional": []
+      },
+      "addexclusion": {
+        "mandatory": [
+          "osversion",
+          "exaversion",
+          "hwmodel",
+          "giversion",
+          "servicetype"
+        ],
+        "optional": []
+      },
+      "list": {
+        "mandatory": [],
+        "optional": [
+          "id",
+          "exaversion",
+          "hwmodel",
+          "giversion",
+          "servicetype"
+        ]
+      },
+      "catalog": {
+        "mandatory": [],
+        "optional": [
+          "model",
+          "giversion",
+          "servicetype",
+          "dom0version"
+        ]
+      }
+    },
+    "gioperation": {
+      "mandatory": [
+        "jsonpath"
+      ],
+      "optional": []
+    }
+  },
+  "rackslot": {
+    "list": {
+      "mandatory": [
+        "exadata_id"
+      ],
+      "optional": []
+    },
+    "get": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "register": {
+      "mandatory": [
+        "exadata_id"
+      ],
+      "optional": [
+        "networkinfo",
+        "xml"
+      ]
+    },
+    "deregister": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    }
+  },
+  "service": {
+    "create": {
+      "mandatory": [],
+      "optional": [
+        "racksize",
+        "exaunitName",
+        "type",
+        "backupToDisk",
+        "grid_version",
+        "grid_bp",
+        "service_type",
+        "memsize",
+        "clientNetwork",
+        "backupNetwork",
+        "iaas",
+        "suspend_on_create",
+        "model",
+        "dcId",
+        "datacenterId",
+        "datacenterName",
+        "datacenterRegionId",
+        "datacenterRegionName",
+        "zone",
+        "is_ha",
+        "isHA",
+        "ipNet",
+        "higgs_url",
+        "subscriptionId",
+        "admin_username",
+        "appidUser",
+        "appidPwd",
+        "cores",
+        "entitlement_id",
+        "instName",
+        "AutonomousDb",
+        "env",
+        "gen2PayloadPath",
+        "enable_nid_starterdb",
+        "subtype",
+        "isRackReserved",
+        "infra",
+        "dev",
+        "sshkey",
+        "deferKeyDeletion",
+        "clustername",
+        "pdit"
+      ]
+    },
+    "delete": {
+      "mandatory": [],
+      "optional": []
+    },
+    "recreate": {
+      "mandatory": [],
+      "optional": []
+    },
+    "get": {
+      "mandatory": [
+        "service_id"
+      ],
+      "optional": []
+    },
+    "update_memory": {
+      "mandatory": [
+        "exaunit_Id"
+      ],
+      "optional": [
+        "vms",
+        "gb_memory",
+        "json_path",
+        "idemtoken"
+      ]
+    }
+  },
+  "security": {
+    "add_selinuxpolicy": {
+      "mandatory": [
+        "component",
+        "policy_name",
+        "policy_file",
+        "network_communication"
+      ],
+      "optional": [
+        "service"
+      ]
+    },
+    "list_selinuxpolicy": {
+      "mandatory": [],
+      "optional": [
+        "component"
+      ]
+    },
+    "dump_selinuxpolicy": {
+      "mandatory": [
+        "component",
+        "policy_name",
+        "policy_file"
+      ],
+      "optional": []
+    },
+    "add_fsencryption": {
+      "mandatory": [
+        "infra_component",
+        "key_source",
+        "encryption_mode",
+        "secret_compartment_id",
+        "vault_id",
+        "kms_id"
+      ],
+      "optional": [
+        "customer_tenancy_id",
+        "target_filesystems",
+        "bucket_id",
+        "kms_key_endpoint",
+        "bucket_name",
+        "bucket_namespace"
+      ]
+    },
+    "remove_fsencryption": {
+      "mandatory": [],
+      "optional": [
+        "customerTenancyId",
+        "customer_tenancy_id"
+      ]
+    },
+    "list_fsencryption": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    }
+  },
+  "exaservice": {
+    "create": {
+      "mandatory": [
+        "racksize",
+        "model"
+      ],
+      "optional": [
+        "node_subset",
+        "rack_cores",
+        "clu_size",
+        "clu_cores",
+        "clu_memory",
+        "clu_storage",
+        "clu_ohsize",
+        "clu_name",
+        "inst_name",
+        "enable_sparse",
+        "backupto_disk",
+        "type",
+        "admin_username",
+        "appidUser",
+        "appidPwd",
+        "client_nw",
+        "backup_nw",
+        "ipNet",
+        "entity_id",
+        "higgs_url",
+        "atp_enabled",
+        "iaas",
+        "suspend_on_create",
+        "rack_name",
+        "isCOS",
+        "subscriptionId",
+        "exadata_id"
+      ]
+    },
+    "addcluster": {
+      "mandatory": [
+        "exaservice_id"
+      ],
+      "optional": [
+        "node_subset",
+        "clu_size",
+        "clu_cores",
+        "clu_memory",
+        "clu_storage",
+        "clu_ohsize",
+        "clu_name",
+        "enable_sparse",
+        "backupto_disk",
+        "admin_username",
+        "appidUser",
+        "appidPwd",
+        "client_nw",
+        "backup_nw",
+        "ipNet",
+        "entity_id",
+        "higgs_url",
+        "subscriptionId",
+        "rack_name"
+      ]
+    },
+    "reshape": {
+      "mandatory": [
+        "exaservice_id"
+      ],
+      "optional": [
+        "rack_cores",
+        "burst_cores",
+        "rack_cores_dist",
+        "burst_cores_dist",
+        "isCOS",
+        "add_cell",
+        "add_compute"
+      ]
+    },
+    "reshapecluster": {
+      "mandatory": [
+        "exaservice_id",
+        "exaunit_id"
+      ],
+      "optional": [
+        "node_subset",
+        "clu_cores",
+        "clu_memory",
+        "clu_storage",
+        "clu_ohsize"
+      ]
+    },
+    "reshapecluster_precheck": {
+      "mandatory": [
+        "exadataInfrastructureId",
+        "exaunitId"
+      ],
+      "optional": [
+        "cores",
+        "memoryGb",
+        "ohomeSizeGb",
+        "storageTb"
+      ]
+    },
+    "coreburstcluster": {
+      "mandatory": [
+        "exaservice_id",
+        "exaunit_id",
+        "clu_cores"
+      ],
+      "optional": []
+    },
+    "deletecluster": {
+      "mandatory": [
+        "exaservice_id",
+        "exaunit_id"
+      ],
+      "optional": []
+    },
+    "delete": {
+      "mandatory": [
+        "exaservice_id"
+      ],
+      "optional": [
+        "sse"
+      ]
+    },
+    "list": {
+      "mandatory": [],
+      "optional": [
+        "exaservice_id",
+        "exaunit_id"
+      ]
+    },
+    "migrate": {
+      "mandatory": [
+        "json"
+      ],
+      "optional": [
+        "outfile",
+        "mode"
+      ]
+    },
+    "migratestatus": {
+      "mandatory": [
+        "service_id"
+      ],
+      "optional": [
+        "outfile",
+        "mode"
+      ]
+    },
+    "migrateprefetch": {
+      "mandatory": [],
+      "optional": [
+        "exaunit_id",
+        "service_id",
+        "outfile"
+      ]
+    },
+    "migratepostfetch": {
+      "mandatory": [
+        "exaservice_id",
+        "entity"
+      ],
+      "optional": [
+        "exaunit_id",
+        "outfile"
+      ]
+    },
+    "migratepostupdate": {
+      "mandatory": [
+        "exaservice_id",
+        "input_json"
+      ],
+      "optional": [
+        ""
+      ]
+    },
+    "migraterollback": {
+      "mandatory": [
+        "service_id"
+      ],
+      "optional": [
+        "mode"
+      ]
+    },
+    "rackinfo": {
+      "mandatory": [
+        "exaservice_id"
+      ],
+      "optional": []
+    },
+    "suspend": {
+      "mandatory": [
+        "exaservice_id"
+      ],
+      "optional": [
+        ""
+      ]
+    },
+    "resume": {
+      "mandatory": [
+        "exaservice_id"
+      ],
+      "optional": [
+        ""
+      ]
+    },
+    "resourceinfo": {
+      "mandatory": [
+        "exaservice_id"
+      ],
+      "optional": []
+    },
+    "syncrackslots": {
+      "mandatory": [
+        "exadata_id"
+      ],
+      "optional": []
+    }
+  },
+  "zone": {
+    "add": {
+      "mandatory": [
+        "uri",
+        "username",
+        "passwd"
+      ],
+      "optional": [
+        "region",
+        "dc",
+        "location",
+        "bkupuri"
+      ]
+    },
+    "list": {
+      "mandatory": [],
+      "optional": [
+        "region",
+        "dc",
+        "racksize",
+        "hwmodel"
+      ]
+    },
+    "delete": {
+      "mandatory": [],
+      "optional": []
+    }
+  },
+  "location": {
+    "add": {
+      "mandatory": [
+        "uri",
+        "username",
+        "passwd",
+        "type",
+        "region"
+      ],
+      "optional": [
+        "dc",
+        "bkupuri",
+        "subscription_id",
+        "compute_zone",
+        "ecra_location"
+      ]
+    },
+    "list": {
+      "mandatory": [
+        "type"
+      ],
+      "optional": [
+        "region",
+        "dc",
+        "subscription_id",
+        "compute_zone",
+        "racksize",
+        "hwmodel"
+      ]
+    },
+    "delete": {
+      "mandatory": [
+        "type"
+      ],
+      "optional": [
+        "region",
+        "dc",
+        "compute_zone",
+        "subscription_id"
+      ]
+    },
+    "details": {
+      "mandatory": [
+        "region",
+        "subscription_id",
+        "racksize",
+        "model"
+      ],
+      "optional": []
+    }
+  },
+  "exadata": {
+    "network_info": {
+      "mandatory": [
+        "racksize"
+      ],
+      "optional": [
+        "zone"
+      ]
+    },
+    "models": {
+      "mandatory": [],
+      "optional": [
+        "model"
+      ]
+    }
+  },
+  "ebtables": {
+    "enable": {
+      "mandatory": [],
+      "optional": []
+    },
+    "disable": {
+      "mandatory": [],
+      "optional": []
+    },
+    "add": {
+      "mandatory": [
+        "ip"
+      ],
+      "optional": []
+    },
+    "delete": {
+      "mandatory": [
+        "ip"
+      ],
+      "optional": []
+    }
+  },
+  "jumbo": {
+    "enable": {
+      "mandatory": [],
+      "optional": []
+    },
+    "disable": {
+      "mandatory": [],
+      "optional": []
+    },
+    "query": {
+      "mandatory": [],
+      "optional": []
+    }
+  },
+  "idemtoken": {
+    "new": {
+      "mandatory": [],
+      "optional": []
+    },
+    "renew": {
+      "mandatory": [
+        "idemtoken"
+      ],
+      "optional": []
+    }
+  },
+  "clone": {
+    "snap": {
+      "mandatory": [],
+      "optional": [
+        "cloneDB",
+        "tmDB",
+        "passwd"
+      ]
+    },
+    "testmaster": {
+      "mandatory": [],
+      "optional": [
+        "sourceDB",
+        "tmDB",
+        "passwd"
+      ]
+    }
+  },
+  "info": {
+    "mandatory": [],
+    "optional": [
+      "hide_clusters",
+      "showongoingops",
+      "rackstate",
+      "rackname",
+      "display",
+      "verbose",
+      "ecraonly"
+    ]
+  },
+  "test": {
+    "createdelete": {
+      "mandatory": [],
+      "optional": []
+    }
+  },
+  "vm": {
+    "status": {
+      "mandatory": [],
+      "optional": []
+    },
+    "action": {
+      "mandatory": [],
+      "optional": [
+        "env",
+        "force"
+      ]
+    },
+    "relation": {
+      "mandatory": [
+        "domu"
+      ],
+      "optional": []
+    }
+  },
+  "health_check": {
+    "mandatory": [],
+    "optional": []
+  },
+  "iorm": {
+    "getdblist": {
+      "mandatory": [],
+      "optional": []
+    },
+    "getflashsize": {
+      "mandatory": [],
+      "optional": []
+    },
+    "getobj": {
+      "mandatory": [
+        "exaunit_Id"
+      ],
+      "optional": [
+        "idemtoken"
+      ]
+    },
+    "setobj": {
+      "mandatory": [],
+      "optional": []
+    },
+    "getdbplan": {
+      "mandatory": [
+        "exaunit_Id"
+      ],
+      "optional": [
+        "idemtoken"
+      ]
+    },
+    "setdbplan": {
+      "mandatory": [],
+      "optional": []
+    },
+    "resetdbplan": {
+      "mandatory": [],
+      "optional": []
+    }
+  },
+  "sshkey": {
+    "action": {
+      "mandatory": [
+        "sshkey"
+      ],
+      "optional": [
+        "env",
+        "user",
+        "users",
+        "vms",
+        "hostname",
+        "sshcomment"
+      ]
+    },
+    "get": {
+      "mandatory": [
+        "exaunit_id"
+      ],
+      "optional": [
+        "host",
+        "user",
+        "node_type"
+      ]
+    },
+    "createPublicKey": {
+      "mandatory": [
+        "exaunit_id"
+      ],
+      "optional": [
+        "domu",
+        "user",
+        "wait"
+      ]
+    },
+    "verifyPublicKey": {
+      "mandatory": [
+        "exaunit_id",
+        "domu",
+        "user"
+      ],
+      "optional": []
+    },
+    "deletePublicKey": {
+      "mandatory": [
+        "exaunit_id"
+      ],
+      "optional": [
+        "user",
+        "domu"
+      ]
+    },
+    "getPublicKey": {
+      "mandatory": [
+        "id"
+      ],
+      "optional": []
+    },
+    "addadbskey": {
+      "mandatory": [
+        "exaunitid"
+      ],
+      "optional": [
+        "idemtoken"
+      ]
+    },
+    "removeadbskey": {
+      "mandatory": [
+        "exaunitid"
+      ],
+      "optional": [
+        "idemtoken"
+      ]
+    }
+  },
+  "cores": {
+    "update": {
+      "mandatory": [],
+      "optional": [
+        "subscriptionOcpu",
+        "meteredOcpu",
+        "burstOcpu",
+        "env",
+        "idemtoken",
+        "json_path"
+      ]
+    }
+  },
+  "cns": {
+    "run": {
+      "mandatory": [],
+      "optional": []
+    },
+    "post": {
+      "mandatory": [],
+      "optional": []
+    },
+    "setup": {
+      "mandatory": [],
+      "optional": []
+    },
+    "setupinterval": {
+      "mandatory": [],
+      "optional": []
+    },
+    "getrackstatus": {
+      "mandatory": [],
+      "optional": []
+    },
+    "enablerack": {
+      "mandatory": [],
+      "optional": []
+    },
+    "disablerack": {
+      "mandatory": [],
+      "optional": []
+    },
+    "enable": {
+      "mandatory": [],
+      "optional": []
+    },
+    "disable": {
+      "mandatory": [],
+      "optional": []
+    },
+    "receive": {
+      "mandatory": [],
+      "optional": []
+    }
+  },
+  "status": {
+    "mandatory": [],
+    "optional": []
+  },
+  "listsubmittedwfs": {
+    "mandatory": [],
+    "optional": [
+      "id",
+      "resource_id",
+      "status",
+      "operation",
+      "start_time",
+      "wf_uuid",
+      "end_time",
+      "pagesize",
+      "page"
+    ]
+  },
+  "schedule": {
+    "add": {
+      "mandatory": [],
+      "optional": []
+    },
+    "delete": {
+      "mandatory": [],
+      "optional": []
+    },
+    "list": {
+      "mandatory": [],
+      "optional": []
+    },
+    "update": {
+      "mandatory": [],
+      "optional": []
+    }
+  },
+  "diagnosis": {
+    "rsyslog_get": {
+      "mamdatory": [],
+      "optional": []
+    },
+    "rsyslog_set": {
+      "mandatory": [
+        "target",
+        "value"
+      ],
+      "optional": [
+        "otto_config_path"
+      ]
+    },
+    "logcol": {
+      "mandatory": [
+        "id_name",
+        "id_value"
+      ],
+      "optional": [
+        "timestamp",
+        "hours",
+        "debug",
+        "sundiag",
+        "sosreport",
+        "bugsr",
+        "target_hosttype",
+        "hostnames",
+        "public_key"
+      ]
+    },
+    "add_pre_logcol_rack": {
+      "mandatory": [],
+      "optional": [
+        "name"
+      ]
+    },
+    "list_pre_logcol_rack": {
+      "mandatory": [],
+      "optional": []
+    },
+    "delete_pre_logcol_rack": {
+      "mandatory": [],
+      "optional": [
+        "name"
+      ]
+    },
+    "plgmon": {
+      "mandatory": [],
+      "optional": []
+    },
+    "add_ignore": {
+      "mandatory": [
+        "type",
+        "pattern"
+      ],
+      "optional": []
+    },
+    "list_ignore": {
+      "mandatory": [
+        "type"
+      ],
+      "optional": []
+    },
+    "delete_ignore": {
+      "mandatory": [
+        "type"
+      ],
+      "optional": [
+        "pattern",
+        "id"
+      ]
+    },
+    "show_active_db_conn": {
+      "mandatory": [],
+      "optional": []
+    },
+    "db_conn_stacktrace": {
+      "mandatory": [],
+      "optional": []
+    },
+    "logsearch": {
+      "mandatory": [],
+      "optional": [
+        "request",
+        "workflow",
+        "workflow_task",
+        "exacloud_request",
+        "patch_crid",
+        "scope"
+      ]
+    },
+    "rackhealth_run": {
+      "mandatory": [
+        "type",
+        "targets"
+      ],
+      "optional": [
+        "checks"
+      ]
+    },
+    "rackhealth_result": {
+      "mandatory": [
+        "type",
+        "id"
+      ],
+      "optional": []
+    }
+  },
+  "higgs": {
+    "createNetwork": {
+      "mandatory": [
+        "name",
+        "ipAddressPrefix",
+        "admin_username",
+        "appidUser",
+        "appidPwd",
+        "higgs_url",
+        "subscriptionId"
+      ],
+      "optional": [
+        "network_username"
+      ]
+    },
+    "getAllNetwork": {
+      "mandatory": [
+        "admin_username",
+        "appidUser",
+        "appidPwd",
+        "higgs_url",
+        "subscriptionId"
+      ],
+      "optional": [
+        "network_username"
+      ]
+    },
+    "getNetwork": {
+      "mandatory": [
+        "networkname",
+        "admin_username",
+        "appidUser",
+        "appidPwd",
+        "higgs_url",
+        "subscriptionId"
+      ],
+      "optional": [
+        "network_username"
+      ]
+    },
+    "deleteNetwork": {
+      "mandatory": [
+        "networkname",
+        "admin_username",
+        "appidUser",
+        "appidPwd",
+        "higgs_url",
+        "subscriptionId"
+      ],
+      "optional": [
+        "network_username"
+      ]
+    },
+    "deleteResources": {
+      "mandatory": [
+        "rackname",
+        "admin_username",
+        "appidUser",
+        "appidPwd",
+        "instName",
+        "higgs_url",
+        "subscriptionId"
+      ],
+      "optional": [
+        "clusterId"
+      ]
+    },
+    "createNatvips": {
+      "mandatory": [
+        "target"
+      ],
+      "optional": []
+    },
+    "deleteNatvips": {
+      "mandatory": [
+        "target"
+      ],
+      "optional": []
+    },
+    "listNatvips": {
+      "mandatory": [
+        "target"
+      ],
+      "optional": []
+    },
+    "createSecprotocol": {
+      "mandatory": [
+        "admin_username",
+        "appidUser",
+        "appidPwd",
+        "subscriptionId",
+        "higgs_url",
+        "rack",
+        "ipProtocol",
+        "dstPortSet"
+      ],
+      "optional": []
+    },
+    "createSecrule": {
+      "mandatory": [
+        "admin_username",
+        "appidUser",
+        "appidPwd",
+        "subscriptionId",
+        "higgs_url"
+      ],
+      "optional": [
+        "flowDirection",
+        "json_path",
+        "secProtocols",
+        "name",
+        "acl",
+        "dstVnicSet",
+        "srcVnicSet",
+        "srcIpAddressPrefixSets",
+        "dstIpAddressPrefixSets"
+      ]
+    },
+    "deleteSecrule": {
+      "mandatory": [
+        "admin_username",
+        "appidUser",
+        "appidPwd",
+        "subscriptionId",
+        "higgs_url",
+        "name"
+      ],
+      "optional": []
+    },
+    "getSecrule": {
+      "mandatory": [
+        "admin_username",
+        "appidUser",
+        "appidPwd",
+        "subscriptionId",
+        "higgs_url",
+        "name"
+      ],
+      "optional": []
+    },
+    "getResources": {
+      "mandatory": [
+        "admin_username",
+        "appidUser",
+        "appidPwd",
+        "subscriptionId",
+        "higgs_url",
+        "resource_type"
+      ],
+      "optional": []
+    },
+    "removeResource": {
+      "mandatory": [
+        "admin_username",
+        "appidUser",
+        "appidPwd",
+        "subscriptionId",
+        "higgs_url",
+        "name"
+      ],
+      "optional": []
+    }
+  },
+  "exaunit": {
+    "hasopr": {
+      "mandatory": [],
+      "optional": []
+    },
+    "logs": {
+      "mandatory": [],
+      "optional": [
+        "dest",
+        "dbName",
+        "vmName"
+      ]
+    },
+    "asmrebalance": {
+      "mandatory": [
+        "exaunitid",
+        "rebalancepower"
+      ],
+      "optional": [
+        "idemtoken"
+      ]
+    },
+    "resizefs": {
+      "mandatory": [],
+      "optional": [
+        "listofnodes",
+        "validate_max_size",
+        "filesystem",
+        "extra_size",
+        "filesystems"
+      ]
+    },
+    "migrateVmBackupXs": {
+      "mandatory": [
+        "exaunitId",
+        "xsVmBackupRetentionNum"
+      ],
+      "optional": [
+        "idemtoken"
+      ]
+    },
+    "list": {
+      "mandatory": [
+        "dom0_bonding"
+      ],
+      "optional": []
+    },
+    "detail_update": {
+      "mandatory": [],
+      "optional": [
+        "grid_version",
+        "customer_name",
+        "initial_cores",
+        "image_version",
+        "reserved_cores",
+        "reserved_memory",
+        "filesystem",
+        "gb_memory",
+        "tb_storage",
+        "gb_storage",
+        "gb_ohsize",
+        "atp",
+        "jumbo_frames",
+        "monitoring_enabled",
+        "total_cores",
+        "fsconfig",
+        "ecpufactor"
+      ]
+    },
+    "addcompute": {
+      "mandatory": [
+        "jsonPayload"
+      ],
+      "optional": [
+        "dom0hostname",
+        "hostname"
+      ]
+    },
+    "addcell": {
+      "mandatory": [
+        "jsonPayload"
+      ],
+      "optional": [
+        "hostname"
+      ]
+    },
+    "deletecompute": {
+      "mandatory": [],
+      "optional": [
+        "hostnames",
+        "jsonPayload",
+        "force"
+      ]
+    },
+    "deletecell": {
+      "mandatory": [
+        "cellnodes"
+      ],
+      "optional": []
+    },
+    "reshape": {
+      "mandatory": [
+        "exaunitId",
+        "env",
+        "infra",
+        "exaOcid",
+        "reshapePayloadPath"
+      ],
+      "optional": [
+        "cores",
+        "memory",
+        "storageTb",
+        "ohomeGb"
+      ]
+    },
+    "cleanreservations": {
+      "mandatory": [
+        "exaunitId",
+        "env",
+        "infra",
+        "exaOcid",
+        "requestId"
+      ],
+      "optional": []
+    },
+    "monitoring": {
+      "mandatory": [],
+      "optional": [
+        "exaunit"
+      ]
+    },
+    "getcspayload": {
+      "mandatory": [],
+      "optional": [
+        "payloadtype"
+      ]
+    },
+    "reshapeprecheck": {
+      "mandatory": [
+        "jsonPayload"
+      ],
+      "optional": [
+        "idemtoken",
+        "exaOcid",
+        "exaunitId",
+        "opType"
+      ]
+    },
+    "elasticnodeprecheck": {
+      "mandatory": [
+        "jsonPayload"
+      ],
+      "optional": [
+        "idemtoken",
+        "exaOcid",
+        "exaunitId",
+        "opType"
+      ]
+    },
+    "getelasticnodeprecheck": {
+      "mandatory": [
+        "idemtoken"
+      ],
+      "optional": []
+    },
+    "generatecspayload": {
+      "mandatory": [],
+      "optional": [
+        "workflowid",
+        "filename",
+        "payload"
+      ]
+    },
+    "updatetimezone": {
+      "mandatory": [
+        "exaunitid",
+        "timezone"
+      ],
+      "optional": []
+    },
+    "getdginfo": {
+      "mandatory": [
+        "exaunitid"
+      ],
+      "optional": []
+    },
+    "getallforinfra": {
+      "mandatory": [
+        "exaOcid",
+        "env"
+      ],
+      "optional": []
+    },
+    "securevms": {
+      "mandatory": [
+        "exaunitid"
+      ],
+      "optional": [
+        "opcrequestid",
+        "idemtoken",
+        "payload"
+      ]
+    },
+    "getoperations": {
+      "mandatory": [
+        "exaunitid"
+      ],
+      "optional": []
+    },
+    "updatentpdns": {
+      "mandatory": [
+        "exaunitid"
+      ],
+      "optional": []
+    },
+    "rotatekeys": {
+      "mandatory": [],
+      "optional": [
+        "exaunitid",
+        "rackname",
+        "force",
+        "idemtoken"
+      ]
+    },
+    "getcomputesizes": {
+      "mandatory": [
+        "exaunitid"
+      ],
+      "optional": [
+        "dom0s",
+        "ignorexml",
+        "wait"
+      ]
+    },
+    "collectvmcore": {
+      "mandatory": [
+        "exaunitid",
+        "vmName"
+      ],
+      "optional": [
+        "idemtoken"
+      ]
+    },
+    "acfs": {
+      "mandatory": [
+        "operation",
+        "acfsOcid",
+        "exaunitId"
+      ],
+      "optional": [
+        "sizeGb",
+        "acfsName",
+        "mount"
+      ]
+    }
+  },
+  "vmbackup": {
+    "set_param": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": [
+        "remotebackup",
+        "ossbackup",
+        "maxremotebackups",
+        "deletelocalbackup",
+        "activeblockcommit",
+        "materializedlocalcopy",
+        "ossnumbackups"
+      ]
+    },
+    "get_param": {
+      "mandatory": [],
+      "optional": []
+    },
+    "enable": {
+      "mandatory": [],
+      "optional": []
+    },
+    "disable": {
+      "mandatory": [],
+      "optional": []
+    },
+    "install": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": [
+        "skipchecksum",
+        "deletelocalbackup",
+        "remotebackup",
+        "ossbackup",
+        "skipimg",
+        "stauth",
+        "stuser",
+        "stkey",
+        "clusterless",
+        "activeblockcommit",
+        "materializedlocalcopy"
+      ]
+    },
+    "oss_backup": {
+      "mandatory": [],
+      "optional": [
+        "stauth",
+        "stuser",
+        "stkey",
+        "skipchecksum",
+        "deletelocalbackup",
+        "remotebackup",
+        "ossbackup",
+        "skipimg",
+        "clusterless"
+      ]
+    },
+    "patch": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "rollback": {
+      "mandatory": [
+        "exaunitid",
+        "vmname"
+      ],
+      "optional": [
+        "backupseq",
+        "local",
+        "dest"
+      ]
+    },
+    "backup": {
+      "mandatory": [],
+      "optional": [
+        "exaunitid"
+      ]
+    },
+    "status": {
+      "mandatory": [],
+      "optional": [
+        "exaunitid",
+        "dom0"
+      ]
+    },
+    "scheduler": {
+      "setnextrun": {
+        "mandatory": [
+          "id",
+          "datetime"
+        ],
+        "optional": []
+      },
+      "setfrequency": {
+        "mandatory": [
+          "id",
+          "frequencyvalue",
+          "frequency"
+        ],
+        "optional": []
+      }
+    },
+    "schedulerstatus": {
+      "mandatory": [],
+      "optional": [
+        "detailed",
+        "exaunitid"
+      ]
+    },
+    "schedulerhistory": {
+      "mandatory": [
+        "exaunitid"
+      ],
+      "optional": [
+        "page",
+        "pagesize"
+      ]
+    },
+    "list": {
+      "mandatory": [],
+      "optional": [
+        "rackname",
+        "clusterless",
+        "exaOcid"
+      ]
+    },
+    "osslist": {
+      "mandatory": [],
+      "optional": [
+        "rackname",
+        "dom0",
+        "reload"
+      ]
+    },
+    "download": {
+      "mandatory": [
+        "exaunitid",
+        "vmname",
+        "seq"
+      ],
+      "optional": []
+    },
+    "restorelocal": {
+      "mandatory": [
+        "exaunitid",
+        "vmname",
+        "seq"
+      ],
+      "optional": [
+        "image",
+        "restartvm"
+      ]
+    },
+    "restorepath": {
+      "mandatory": [],
+      "optional": []
+    },
+    "suconfig": {
+      "mandatory": [
+        "user",
+        "fingerprint",
+        "tenancy",
+        "region"
+      ],
+      "optional": [
+        "keyfile",
+        "keycontent"
+      ]
+    },
+    "configurecronjob": {
+      "mandatory": [
+        "hostname",
+        "action"
+      ],
+      "optional": []
+    }
+  },
+  "hardware": {
+    "properties": {
+      "mandatory": [],
+      "optional": [
+        "racksize",
+        "model"
+      ]
+    },
+    "tenancypropertylist": {
+      "mandatory": [],
+      "optional": []
+    },
+    "tenancypropertyput": {
+      "mandatory": [
+        "tenancy_id"
+      ],
+      "optional": [
+        "user_group",
+        "cloud_vnuma",
+        "jumbo_frames",
+        "memoryconfig",
+        "customids",
+        "usersdata",
+        "groupsdata",
+        "skipresizedg"
+      ]
+    },
+    "configurefeaturetenancy": {
+      "mandatory": [
+        "tenancyid",
+        "feature",
+        "value"
+      ],
+      "optional": []
+    },
+    "tenancypropertydel": {
+      "mandatory": [
+        "tenancy_id"
+      ],
+      "optional": []
+    }
+  },
+  "cluster": {
+    "details": {
+      "mandatory": [],
+      "optional": [
+        "rackname",
+        "domu",
+        "dbsid",
+        "subscriptionid",
+        "exaunitid",
+        "resourceocid",
+        "resourcetype",
+        "shortresponse"
+      ]
+    }
+  },
+  "gcsinfra": {
+    "getinfo": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    }
+  },
+  "cabinet": {
+    "list": {
+      "mandatory": [],
+      "optional": []
+    },
+    "get": {
+      "mandatory": [
+        "cabinetname"
+      ],
+      "optional": []
+    },
+    "ports": {
+      "mandatory": [],
+      "optional": [
+        "cabinetid",
+        "cabinetname"
+      ]
+    },
+    "update": {
+      "mandatory": [
+        "cabinetname"
+      ],
+      "optional": []
+    },
+    "updatexml": {
+      "mandatory": [
+        "cabinetname",
+        "newxmlpath"
+      ],
+      "optional": []
+    },
+    "getxml": {
+      "mandatory": [
+        "cabinetname"
+      ],
+      "optional": []
+    },
+    "modelsubtype": {
+      "convert": {
+        "mandatory": [
+          "modelsubtype"
+        ],
+        "optional": [
+          "model",
+          "cabinetname",
+          "hostnames",
+          "amount",
+          "nodetype"
+        ]
+      },
+      "getreport": {
+        "mandatory": [
+          "modelsubtype"
+        ],
+        "optional": [
+          "cabinetname",
+          "model",
+          "nodetype"
+        ]
+      },
+      "releasenodes": {
+        "mandatory": [],
+        "optional": [
+          "requestid",
+          "cabinetname",
+          "hostnames"
+        ]
+      }
+    },
+    "composexml": {
+      "mandatory": [
+        "cabinetname"
+      ],
+      "optional": [
+        "force"
+      ]
+    },
+    "domu": {
+      "get": {
+        "mandatory": [
+          "dom0"
+        ],
+        "optional": []
+      },
+      "update": {
+        "mandatory": [
+          "hostname"
+        ],
+        "optional": [
+          "admin_nat_ip",
+          "db_client_mac",
+          "db_backup_mac",
+          "admin_vlan_tag"
+        ]
+      }
+    },
+    "softdeletenode": {
+      "mandatory": [
+        "cabinetname",
+        "hostname"
+      ],
+      "optional": [
+        "servicetype"
+      ]
+    },
+    "getnodes": {
+      "mandatory": [
+        "cabinetname"
+      ],
+      "optional": []
+    },
+    "recovernode": {
+      "mandatory": [
+        "cabinetname",
+        "hostname"
+      ],
+      "optional": [
+        "clustertag"
+      ]
+    },
+    "purgenode": {
+      "mandatory": [
+        "cabinetname",
+        "hostname"
+      ],
+      "optional": []
+    },
+    "getnodestatusreport": {
+      "mandatory": [],
+      "optional": []
+    },
+    "getnodearchivedreason": {
+      "mandatory": [
+        "hostname"
+      ],
+      "optional": []
+    },
+    "updatenodearchivedreason": {
+      "mandatory": [
+        "hostname",
+        "archivedreason"
+      ],
+      "optional": []
+    },
+    "getnodearchivedextrainfo": {
+      "mandatory": [
+        "hostname"
+      ],
+      "optional": []
+    },
+    "updatenodearchivedextrainfo": {
+      "mandatory": [
+        "hostname",
+        "extrainfojsonpath"
+      ],
+      "optional": []
+    },
+    "ingestion": {
+      "mandatory": [
+        "flatfile",
+        "xml"
+      ],
+      "optional": [
+        "idemtoken"
+      ]
+    }
+  },
+  "bonding": {
+    "getInfo": {
+      "mandatory": [],
+      "optional": [
+        "rackname",
+        "hostname"
+      ]
+    },
+    "setupMonitoringBond": {
+      "mandatory": [],
+      "optional": [
+        "json_path",
+        "hostname",
+        "skipbonding"
+      ]
+    },
+    "deleteMonitoringBond": {
+      "mandatory": [
+        "json_path"
+      ],
+      "optional": [
+        "hostname"
+      ]
+    },
+    "getpayload": {
+      "mandatory": [],
+      "optional": [
+        "rackname",
+        "hostname",
+        "cabinetname"
+      ]
+    },
+    "retrysetup": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "migrationPrecheck": {
+      "optional": [],
+      "mandatory": [
+        "idemtoken",
+        "rackname",
+        "bondedhosts",
+        "nonbondedhosts"
+      ]
+    },
+    "smartnicaction": {
+      "optional": [],
+      "mandatory": [
+        "nodeid",
+        "actionjson"
+      ]
+    },
+    "migratevlan": {
+      "mandatory": [],
+      "optional": [
+        "json_path"
+      ]
+    },
+    "networkupdate": {
+      "mandatory": [],
+      "optional": [
+        "json_path"
+      ]
+    },
+    "monitorswitch": {
+      "mandatory": [],
+      "optional": [
+        "json_path"
+      ]
+    },
+    "getelasticcabinets": {
+      "mandatory": [],
+      "optional": []
+    },
+    "rpmupdate": {
+      "mandatory": [],
+      "optional": [
+        "rackname",
+        "hostnames"
+      ]
+    },
+    "rpmupdateall": {
+      "mandatory": [],
+      "optional": [
+        "selectnodes",
+        "mode"
+      ]
+    },
+    "customvipadd": {
+      "mandatory": [],
+      "optional": [
+        "json_path",
+        "rackname",
+        "idemtoken"
+      ]
+    },
+    "customvipdelete": {
+      "mandatory": [],
+      "optional": [
+        "json_path",
+        "rackname",
+        "idemtoken"
+      ]
+    },
+    "linkfailover": {
+      "mandatory": [
+        "components"
+      ],
+      "optional": [
+        "newactive"
+      ]
+    },
+    "consistencycheck": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": [
+        "hostname"
+      ]
+    },
+    "restartmonitor": {
+      "mandatory": [
+        "component"
+      ],
+      "optional": []
+    },
+    "status": {
+      "mandatory": [],
+      "optional": [
+        "component",
+        "id"
+      ]
+    }
+  },
+  "backfill": {
+    "caviumip": {
+      "mandatory": [
+        "flatfile"
+      ],
+      "optional": []
+    },
+    "adminsmartnics" : {
+      "mandatory" : ["payload"],
+      "optional" : ["cabinetname"]
+    },
+    "update_caviumid": {
+      "mandatory": [
+        "old_id",
+        "new_id"
+      ],
+      "optional": []
+    },
+    "updatecaviumip": {
+      "mandatory": [
+        "caviumid",
+        "caviumip"
+      ],
+      "optional": []
+    },
+    "update_cavium": {
+      "mandatory": [
+        "current_cavium_id"
+      ],
+      "optional": [
+        "current_etherface_type",
+        "new_cavium_id",
+        "new_cavium_ip",
+        "new_mac"
+      ]
+    },
+    "qfabdetails": {
+      "mandatory": [
+        "flatfile"
+      ],
+      "optional": []
+    },
+    "fabricexascale": {
+      "mandatory": [
+        "fabricname"
+      ],
+      "optional": []
+    },
+    "mvmsubnetinfo": {
+      "mandatory": [],
+      "optional": [
+        "subnetmask",
+        "gateway",
+        "domain",
+        "cabinetname",
+        "flatfile",
+        "force",
+        "jsonpayload"
+      ]
+    },
+    "updatesitegroup": {
+      "mandatory": [
+        "grouptype",
+        "groupidentifier",
+        "sitegroup"
+      ],
+      "optional": []
+    }
+  },
+  "kvmroce": {
+    "allocateComputeVlan": {
+      "mandatory": [
+        "fabric_name",
+        "rackname"
+      ],
+      "optional": [
+        "number_of_vlans",
+        "ListOfVlans"
+      ]
+    },
+    "allocateStorageVlan": {
+      "mandatory": [
+        "fabric_name",
+        "rackname"
+      ],
+      "optional": [
+        "number_of_vlans",
+        "ListOfVlans"
+      ]
+    },
+    "getComputeVlan": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "getStorageVlan": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "freeComputeVlan": {
+      "mandatory": [
+        "fabric_name"
+      ],
+      "optional": [
+        "ListOfVlans",
+        "vlan_id"
+      ]
+    },
+    "freeStorageVlan": {
+      "mandatory": [
+        "fabric_name"
+      ],
+      "optional": [
+        "ListOfVlans",
+        "vlan_id"
+      ]
+    },
+    "allocateComputeIP": {
+      "mandatory": [
+        "fabric_name",
+        "rackname",
+        "shape"
+      ],
+      "optional": [
+        "number_of_nodes",
+        "ListOfIps",
+        "ListOfNodes",
+        "generateNodeNames",
+        "exacompute"
+      ]
+    },
+    "allocateStorageIP": {
+      "mandatory": [
+        "fabric_name",
+        "rackname",
+        "shape"
+      ],
+      "optional": [
+        "number_of_nodes",
+        "ListOfIps",
+        "ListOfNodes",
+        "generateNodeNames"
+      ]
+    },
+    "allocateExascaleIP": {
+      "mandatory": [
+        "fabric_name",
+        "rackname",
+        "shape"
+      ],
+      "optional": [
+        "number_of_nodes",
+        "ListOfIps",
+        "ListOfNodes",
+        "generateNodeNames"
+      ]
+    },
+    "getComputeIP": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "getStorageIP": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "getExascaleIP": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "freeComputeIP": {
+      "mandatory": [
+        "fabric_name"
+      ],
+      "optional": [
+        "rackname",
+        "ListOfIps"
+      ]
+    },
+    "freeStorageIP": {
+      "mandatory": [
+        "fabric_name"
+      ],
+      "optional": [
+        "rackname",
+        "ListOfIps"
+      ]
+    },
+    "freeExascaleIP": {
+      "mandatory": [
+        "fabric_name"
+      ],
+      "optional": [
+        "rackname",
+        "ListOfIps"
+      ]
+    },
+    "addFabric": {
+      "mandatory": [
+        "fabric_name"
+      ],
+      "optional": [
+        "fabric_type"
+      ]
+    },
+    "deleteFabric": {
+      "mandatory": [
+        "fabric_name"
+      ],
+      "optional": []
+    },
+    "listFabric": {
+      "mandatory": [],
+      "optional": [
+        "verbose"
+      ]
+    },
+    "getAllFabric": {
+      "mandatory": [],
+      "optional": []
+    },
+    "isexascalepoolcreated": {
+      "mandatory": [
+        "fabricname"
+      ],
+      "optional": []
+    },
+    "getAllCabinets": {
+      "mandatory": [],
+      "optional": [
+        "includearchivednodes"
+      ]
+    },
+    "getAllNodes": {
+      "mandatory": [],
+      "optional": [
+        "includearchivednodes"
+      ]
+    },
+    "getCabinets": {
+      "mandatory": [
+        "fabric_name"
+      ],
+      "optional": []
+    },
+    "getCabinetNodes": {
+      "mandatory": [
+        "fabric_name",
+        "cabinet_name"
+      ],
+      "optional": []
+    },
+    "runsanitycheck": {
+      "mandatory": [
+        "operationtype",
+        "exadataInfrastructureId"
+      ],
+      "optional": [
+        "idemtoken",
+        "rackname",
+        "exacsAgentresponse",
+        "elasticnodes",
+        "serverscount"
+      ]
+    },
+    "getsanityresults": {
+      "mandatory": [
+        "idemtoken"
+      ],
+      "optional": []
+    },
+    "listfaultdomains": {
+      "mandatory": [],
+      "optional": []
+    },
+    "updatefaultdomain": {
+      "mandatory": [
+        "fabricname",
+        "faultdomain"
+      ],
+      "optional": []
+    },
+    "get_elastic_reservation_threshold": {
+      "mandatory": [
+        "fabric_name"
+      ],
+      "optional": []
+    },
+    "set_elastic_reservation_threshold": {
+      "mandatory": [
+        "fabric_name",
+        "model",
+        "type",
+        "model_subtype",
+        "threshold"
+      ],
+      "optional": []
+    },
+    "set_elastic_reservation_threshold_abs": {
+      "mandatory": [
+        "fabric_name",
+        "model",
+        "type",
+        "model_subtype",
+        "threshold_abs"
+      ],
+      "optional": []
+    },
+    "get_elastic_reservation_setting": {
+      "mandatory": [
+        "fabric_name"
+      ],
+      "optional": []
+    },
+    "enable_utilization_based_elastic_reservation": {
+      "mandatory": [
+        "fabric_name",
+        "model"
+      ],
+      "optional": []
+    },
+    "disable_utilization_based_elastic_reservation": {
+      "mandatory": [
+        "fabric_name",
+        "model"
+      ],
+      "optional": []
+    }
+  },
+  "exawatcher": {
+    "getlog": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": [
+        "fromtime",
+        "totime",
+        "targets",
+        "filter",
+        "targettypes"
+      ]
+    },
+    "listlog": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": [
+        "retrieval-history"
+      ]
+    }
+  },
+  "userconfig": {
+    "create_user": {
+      "mandatory": [],
+      "optional": []
+    },
+    "alter_user": {
+      "mandatory": [],
+      "optional": []
+    },
+    "grant_role": {
+      "mandatory": [],
+      "optional": []
+    },
+    "list_user": {
+      "mandatory": [],
+      "optional": []
+    },
+    "delete_user": {
+      "mandatory": [],
+      "optional": []
+    },
+    "delete_role": {
+      "mandatory": [],
+      "optional": []
+    }
+  },
+  "atp": {
+    "getDetails": {
+      "mandatory": [
+        "dbSystemId"
+      ],
+      "optional": []
+    },
+    "getNetwork": {
+      "mandatory": [
+        "dbSystemId"
+      ],
+      "optional": [
+        "shape"
+      ]
+    },
+    "registerVnic": {
+      "mandatory": [
+        "dbSystemId",
+        "vnics"
+      ],
+      "optional": [
+        "rackname",
+        "idemtoken"
+      ]
+    },
+    "bootstrap": {
+      "mandatory": [
+        "json_path"
+      ],
+      "optional": [
+        ""
+      ]
+    },
+    "createOciUrlMap": {
+      "mandatory": [
+        "json_path"
+      ],
+      "optional": []
+    },
+    "getOciUrlMap": {
+      "mandatory": [
+        "realm"
+      ],
+      "optional": []
+    },
+    "getOciUrlMapAll": {
+      "mandatory": [],
+      "optional": []
+    },
+    "getVnicDetails": {
+      "mandatory": [
+        "dbSystemId"
+      ],
+      "optional": []
+    },
+    "registerVcnDetails": {
+      "mandatory": [
+        "Identity",
+        "Network",
+        "Resources",
+        "Config_Properties"
+      ],
+      "optional": []
+    },
+    "registerAuth": {
+      "mandatory": [
+        "tenancy"
+      ],
+      "optional": [
+        "key_file",
+        "json_path",
+        "region",
+        "user",
+        "fingerprint",
+        "om_compartment_ocid",
+        "profile",
+        "passphrase",
+        "orcl_client"
+      ]
+    },
+    "registerAdminIdentity": {
+      "mandatory": [
+        "tenancy_ocid",
+        "region",
+        "compartment_ocid",
+        "loadbalancer_ocid"
+      ],
+      "optional": [
+        "json_path",
+        "profile",
+        "passphrase",
+        "private_key_path",
+        "user_ocid",
+        "fingerprint",
+        "cert_path",
+        "domain"
+      ]
+    },
+    "listCustomerTenancy": {
+      "mandatory": [],
+      "optional": [
+        "dbsystem_id"
+      ]
+    },
+    "putCustomerTenancy": {
+      "mandatory": [
+        "dbsystem_id"
+      ],
+      "optional": [
+        "cloud_account_id",
+        "tenancy_name",
+        "tenancy_ocid",
+        "rackname",
+        "compartment_id",
+        "vmclusterocid",
+        "ceiocid"
+      ]
+    },
+    "deleteCustomerTenancy": {
+      "mandatory": [
+        "dbsystem_id"
+      ],
+      "optional": []
+    },
+    "createPreprovExadataInfrastructure": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "createNetwork": {
+      "mandatory": [
+        "custTenantId",
+        "dbSystemId",
+        "shape",
+        "region",
+        "ad",
+        "rackname"
+      ],
+      "optional": [
+        "idemtoken"
+      ]
+    },
+    "deleteNetwork": {
+      "mandatory": [
+        "dbSystemId"
+      ],
+      "optional": [
+        "optimizedDelete"
+      ]
+    },
+    "getPartnerSubnet": {
+      "mandatory": [
+        "subnetOcid"
+      ],
+      "optional": []
+    },
+    "setupDGNetwork": {
+      "mandatory": [
+        "json_path",
+        "targetType",
+        "slaAvailabilityType"
+      ],
+      "optional": []
+    },
+    "registerSubnet": {
+      "mandatory": [
+        "vcnCIDR"
+      ],
+      "optional": [
+        "adName"
+      ]
+    },
+    "deleteDGNetworkRules": {
+      "mandatory": [
+        "json_path",
+        "targetType"
+      ],
+      "optional": []
+    },
+    "addProperty": {
+      "mandatory": [
+        "value",
+        "type"
+      ],
+      "optional": [
+        "name"
+      ]
+    },
+    "getProperty": {
+      "mandatory": [],
+      "optional": [
+        "name",
+        "value",
+        "type"
+      ]
+    },
+    "deleteProperty": {
+      "mandatory": [
+        "value",
+        "type"
+      ],
+      "optional": []
+    },
+    "createOracleClientSubnet": {
+      "mandatory": [
+        "shape",
+        "rackname"
+      ],
+      "optional": []
+    },
+    "giServiceStop": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "updateNetMetadata": {
+      "mandatory": [
+        "json_path"
+      ],
+      "optional": [
+        "rackname",
+        "dev",
+        "addCluster_json_path"
+      ]
+    },
+    "launchObserver": {
+      "mandatory": [
+        "dbSystemId",
+        "custTenantId",
+        "user_data"
+      ],
+      "optional": []
+    },
+    "deleteObserver": {
+      "mandatory": [
+        "custTenantId",
+        "dbSystemId"
+      ],
+      "optional": []
+    },
+    "terminateObserver": {
+      "mandatory": [
+        "custTenantId"
+      ],
+      "optional": []
+    },
+    "observerOperation": {
+      "mandatory": [
+        "custTenantId"
+      ],
+      "optional": []
+    },
+    "getObserverDetails": {
+      "mandatory": [
+        "dbSystemId"
+      ],
+      "optional": []
+    },
+    "fetchObserverKeys": {
+      "mandatory": [
+        "dbSystemId"
+      ],
+      "optional": []
+    },
+    "createPreprovDbSystem": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "getPreprovScheduler": {
+      "mandatory": [],
+      "optional": []
+    },
+    "listScheduledRacks": {
+      "mandatory": [],
+      "optional": []
+    },
+    "getScheduledRackPreprovJobs": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "startPreprovScheduler": {
+      "mandatory": [],
+      "optional": [
+        "payload"
+      ]
+    },
+    "shutdownPreprovScheduler": {
+      "mandatory": [],
+      "optional": []
+    },
+    "reconfigService": {
+      "mandatory": [
+        "rackname",
+        "reconfig_payload"
+      ],
+      "optional": []
+    },
+    "deletePreprovOracleClientVCN": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "deletePreprovOracleDbSystem": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "ingestTerraformData": {
+      "mandatory": [],
+      "optional": [
+        "resetMgmtSubnetPool",
+        "resetMgmtVcn",
+        "json_path",
+        "oss_filename"
+      ]
+    },
+    "configDom0Rule": {
+      "mandatory": [
+        "rackname",
+        "port",
+        "action"
+      ],
+      "optional": [
+        "source",
+        "target",
+        "protocol"
+      ]
+    },
+    "createPreProvVMCluster": {
+      "mandatory": [
+        "exadataInfrastructureOcid",
+        "networkOcid"
+      ],
+      "optional": []
+    },
+    "getPreprovMetrics": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "configDomURules": {
+      "mandatory": [
+        "rackname",
+        "cidr"
+      ],
+      "optional": []
+    }
+  },
+  "requests": {
+    "abort": {
+      "mandatory": [
+        "exaunit_id",
+        "operation"
+      ],
+      "optional": [
+        "status",
+        "resourceid"
+      ]
+    },
+    "info": {
+      "mandatory": [],
+      "optional": [
+        "zone",
+        "id",
+        "operation",
+        "status",
+        "exaunitid",
+        "rackname"
+      ]
+    },
+    "abort_async": {
+      "mandatory": [
+        "uuid"
+      ],
+      "optional": []
+    },
+    "list_async": {
+      "mandatory": [],
+      "optional": [
+        "status"
+      ]
+    },
+    "multiop_details": {
+      "mandatory": [
+        "id"
+      ],
+      "optional": []
+    },
+    "multiop_recover": {
+      "mandatory": [
+        "id"
+      ],
+      "optional": []
+    },
+    "multiop_update_step": {
+      "mandatory": [
+        "id",
+        "step"
+      ],
+      "optional": [
+        "enabled",
+        "resource_id"
+      ]
+    },
+    "update": {
+      "mandatory": [
+        "request_id"
+      ],
+      "optional": [
+        "operation",
+        "status",
+        "errors",
+        "target_uri",
+        "details",
+        "body",
+        "resource_id",
+        "status_uuid",
+        "description"
+      ]
+    },
+    "get": {
+      "mandatory": [
+        "id"
+      ],
+      "optional": [
+        "fields"
+      ]
+    },
+    "addregistry": {
+      "mandatory": [
+        "requestid",
+        "rackname",
+        "operationname"
+      ],
+      "optional": [
+        "resourceid"
+      ]
+    }
+  },
+  "inventory": {
+    "register": {
+      "mandatory": [
+        "hw_type",
+        "specs_path",
+        "exadata_id"
+      ],
+      "optional": [
+        "uloc"
+      ]
+    },
+    "deregister": {
+      "mandatory": [],
+      "optional": []
+    },
+    "update": {
+      "mandatory": [],
+      "optional": []
+    },
+    "get": {
+      "mandatory": [
+        "hw_type"
+      ],
+      "optional": []
+    },
+    "get_hardware": {
+      "mandatory": [],
+      "optional": [
+        "hw_type",
+        "status",
+        "model",
+        "fabric_name",
+        "servicetype"
+      ]
+    },
+    "reviewcapacity": {
+      "mandatory": [],
+      "optional": [
+        "hw_type",
+        "status",
+        "model",
+        "fabric_name",
+        "servicetype"
+      ]
+    },
+    "getexcludelist": {
+      "mandatory": [
+        "cabinetname"
+      ],
+      "optional": []
+    },
+    "reserve": {
+      "mandatory": [],
+      "optional": [
+        "servers",
+        "nodesToReserve",
+        "idemtoken",
+        "shape",
+        "rackname",
+        "exadataInfrastructureId",
+        "hostnames",
+        "model"
+      ]
+    },
+    "release": {
+      "mandatory": [],
+      "optional": [
+        "json_path",
+        "hostname",
+        "hw_type",
+        "quantity",
+        "rackname",
+        "exadataInfrastructureId"
+      ]
+    },
+    "check": {
+      "mandatory": [],
+      "optional": [
+        "target_nodes",
+        "update_node_state"
+      ]
+    },
+    "update_hwnode": {
+      "mandatory": [
+        "hostname"
+      ],
+      "optional": []
+    },
+    "get_node_detail": {
+      "mandatory": [],
+      "optional": [
+        "hostnames",
+        "cabinetName"
+      ]
+    },
+    "update_node_detail": {
+      "mandatory": [],
+      "optional": [
+        "hostnames",
+        "cabinetname",
+        "rackname",
+        "allnodes"
+      ]
+    },
+    "updatenodes": {
+      "mandatory": [
+        "listofnodes"
+      ],
+      "optional": []
+    },
+    "resetcavium": {
+      "mandatory": [
+        "caviumid"
+      ],
+      "optional": [
+        "ignorenodestate",
+        "action",
+        "targetdevice",
+        "action"
+      ]
+    },
+    "caviumcollectdiag": {
+      "mandatory": [],
+      "optional": [
+        "hostname",
+        "caviumid"
+      ]
+    },
+    "caviumdiagresponse": {
+      "mandatory": [
+        "clobid"
+      ],
+      "optional": []
+    },
+    "resetvlan": {
+      "mandatory": [
+        "cells"
+      ],
+      "optional": [
+        "rack",
+        "cabinet"
+      ]
+    },
+    "startblackout": {
+      "mandatory": [
+        "hostname"
+      ],
+      "optional": []
+    },
+    "endblackout": {
+      "mandatory": [
+        "hostname"
+      ],
+      "optional": []
+    },
+    "getspec": {
+      "mandatory": [
+        "inventoryid",
+        "rackname"
+      ],
+      "optional": []
+    },
+    "summary": {
+      "mandatory": [],
+      "optional": [
+        "nodestate"
+      ]
+    },
+    "updatestatuscomment": {
+      "mandatory": [
+        "component",
+        "name",
+        "content"
+      ],
+      "optional": []
+    },
+    "getstatuscomment": {
+      "mandatory": [
+        "component",
+        "name"
+      ],
+      "optional": []
+    },
+    "resetilomdefaultpassword": {
+      "mandatory": [
+        "listofnodes"
+      ],
+      "optional": [
+        "idemtoken"
+      ]
+    },
+    "resetilomvaultpassword": {
+      "mandatory": [
+        "listofnodes"
+      ],
+      "optional": [
+        "idemtoken"
+      ]
+    }
+  },
+  "exadatainfrastructure": {
+    "create": {
+      "mandatory": [
+        "json_path"
+      ],
+      "optional": [
+        "exadataInfrastructureId",
+        "reuseceiocid",
+        "model",
+        "computecabinetname",
+        "cellcabinetname",
+        "computesubtype",
+        "cellsubtype",
+        "clustertag",
+        "sitegroup"
+      ]
+    },
+    "get": {
+      "mandatory": [],
+      "optional": [
+        "exadataInfrastructureId",
+        "filter",
+        "rackname"
+      ]
+    },
+    "delete": {
+      "mandatory": [
+        "exadataInfrastructureId"
+      ],
+      "optional": []
+    },
+    "rack_reserve": {
+      "mandatory": [
+        "exadataInfrastructureId"
+      ],
+      "optional": [
+        "nodeComputeAliases",
+        "vmclusterid",
+        "rackname",
+        "provisionType"
+      ]
+    },
+    "rack_release": {
+      "mandatory": [
+        "exadataInfrastructureId",
+        "rackname"
+      ],
+      "optional": []
+    },
+    "add_cluster": {
+      "mandatory": [
+        "exadataInfrastructureId",
+        "rackname",
+        "json_path"
+      ],
+      "optional": [
+        "dev",
+        "clustername",
+        "cores",
+        "memorygb",
+        "storagetb",
+        "ohomesizegb",
+        "autonomousdb",
+        "gridversion",
+        "diskgroupsallocation",
+        "createsparse",
+        "backupdisk"
+      ]
+    },
+    "reshapecluster": {
+      "mandatory": [
+        "exadataInfrastructureId",
+        "exaunitId"
+      ],
+      "optional": [
+        "cores",
+        "memoryGb",
+        "ohomeSizeGb",
+        "storageTb",
+        "filesystem",
+        "diskgroupsallocation",
+        "createsparse",
+        "backupdisk"
+      ]
+    },
+    "restorecluster": {
+      "mandatory": [
+        "exadataInfrastructureId",
+        "exaunitId",
+        "requestId"
+      ],
+      "optional": []
+    },
+    "attach_storage": {
+      "mandatory": [
+        "exadataInfrastructureId"
+      ],
+      "optional": [
+        "asmpowerlimit",
+        "vmclusterocid",
+        "skipresize"
+      ]
+    },
+    "attach_storage_exascale": {
+      "mandatory": [
+        "exadataInfrastructureId"
+      ],
+      "optional": []
+    },
+    "delete_storage": {
+      "mandatory": [
+        "exadataInfrastructureId",
+        "servers"
+      ],
+      "optional": [
+        "releaseservers",
+        "asmpowerlimit"
+      ]
+    },
+    "check_data_integrity": {
+      "mandatory": [
+        "exadataInfrastructureId"
+      ],
+      "optional": [
+        "onlyvalidations"
+      ]
+    },
+    "migrate_to_mvm": {
+      "mandatory": [
+        "exadataInfrastructureId",
+        "rackname",
+        "precheckonly"
+      ],
+      "optional": [
+        "vmclusterocid",
+        "tenancyocid"
+      ]
+    },
+    "computevms": {
+      "mandatory": [
+        "oraclehostname"
+      ],
+      "optional": []
+    },
+    "drop": {
+      "mandatory": [
+        "rackname",
+        "exadataInfrastructureId"
+      ],
+      "optional": []
+    },
+    "getinitialpayload": {
+      "mandatory": [],
+      "optional": [
+        "rackname",
+        "ceiocid"
+      ]
+    },
+    "recoverclunodes_sop": {
+      "mandatory": [
+        "exadataInfrastructureId",
+        "jsonpayload"
+      ],
+      "optional": []
+    },
+    "dropclunodes_sop": {
+      "mandatory": [
+        "exadataInfrastructureId",
+        "jsonpayload"
+      ],
+      "optional": []
+    },
+    "secureerase": {
+      "mandatory": [
+        "exadataInfrastructureId",
+        "idemtoken"
+      ],
+      "optional": [
+        "cellnodes"
+      ]
+    },
+    "getsecureerasecert": {
+      "mandatory": [
+        "exadataInfrastructureId"
+      ],
+      "optional": [
+        "path",
+        "cellnode",
+        "operationtype",
+        "downloadtype"
+      ]
+    },
+    "disablebackup": {
+      "mandatory": [
+        "exadataInfrastructureId",
+        "increasefactor"
+      ],
+      "optional": []
+    },
+    "getkeys": {
+      "mandatory": [
+        "ceiocid"
+      ],
+      "optional": [
+        "nodetype",
+        "host",
+        "user",
+        "idemtoken"
+      ]
+    },
+    "updatevmstate": {
+      "mandatory": [
+        "exaocid",
+        "state",
+        "servicetype"
+      ],
+      "optional": [
+        "json_path"
+      ]
+    }
+  },
+  "formation": {
+    "detach": {
+      "mandatory": [
+        "formation_id",
+        "inventory_id"
+      ],
+      "optional": []
+    },
+    "list": {
+      "mandatory": [],
+      "optional": [
+        "formation_id"
+      ]
+    }
+  },
+  "db": {
+    "recreate": {
+      "mandatory": [
+        "dbSID"
+      ],
+      "optional": []
+    },
+    "update_ecra_heartbeat": {
+      "mandatory": [],
+      "optional": []
+    }
+  },
+  "pdb": {
+    "register": {
+      "mandatory": [
+        "exaunit_id",
+        "cdb_sid",
+        "pdb_name",
+        "ocid"
+      ],
+      "optional": []
+    },
+    "deregister": {
+      "mandatory": [
+        "exaunit_id",
+        "cdb_sid",
+        "pdb_name"
+      ],
+      "optional": []
+    },
+    "info": {
+      "mandatory": [
+        "exaunit_id",
+        "cdb_sid"
+      ],
+      "optional": [
+        "pdb_name"
+      ]
+    }
+  },
+  "em": {
+    "reregister": {
+      "mandatory": [
+        "exaunit_id"
+      ],
+      "optional": [
+        "cdb_sid",
+        "pdb_name"
+      ]
+    },
+    "list": {
+      "mandatory": [],
+      "optional": [
+        "exaunit_id",
+        "cdb_sid",
+        "pdb_name"
+      ]
+    }
+  },
+  "rack": {
+    "drop": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "update": {
+      "mandatory": [],
+      "optional": [
+        "status_comment"
+      ]
+    },
+    "get": {
+      "mandatory": [],
+      "optional": [
+        "status_comment"
+      ]
+    },
+    "compose": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "fetchatp": {
+      "mandatory": [
+        "racksize"
+      ],
+      "optional": [
+        "model"
+      ]
+    },
+    "exaid": {
+      "mandatory": [],
+      "optional": [
+        "exaunitid",
+        "dbsystem_id"
+      ]
+    },
+    "getxml": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "unlock": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "nodes": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "ports": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": [
+        "type",
+        "nodeList"
+      ]
+    },
+    "xml": {
+      "patch": {
+        "mandatory": [
+          "rackname",
+          "idemtoken"
+        ],
+        "optional": [
+          "timezone"
+        ]
+      }
+    },
+    "selinuxupdate": {
+      "mandatory": [
+        "component"
+      ],
+      "optional": [
+        "rackname",
+        "cabinetname",
+        "policyVersion",
+        "targetComponentName"
+      ]
+    },
+    "selinuxlist": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": [
+        "component"
+      ]
+    },
+    "selinuxcustomupdate": {
+      "mandatory": [
+        "component"
+      ],
+      "optional": [
+        "rackname",
+        "cabinetname",
+        "targetComponentName",
+        "sendall"
+      ]
+    },
+    "getxmlinfo": {
+      "mandatory": [],
+      "optional": [
+        "rackname",
+        "xmlpath"
+      ]
+    },
+    "validatexml": {
+      "mandatory": [],
+      "optional": []
+    },
+    "patchxmlnodes": {
+      "mandatory": [
+        "rackname",
+        "inventories"
+      ],
+      "optional": [
+        "updaterack"
+      ]
+    },
+    "updatexml": {
+      "mandatory": [
+        "rackname",
+        "path",
+        "xml"
+      ],
+      "optional": [
+        "force"
+      ]
+    },
+    "sanitycheck": {
+      "mandatory": [],
+      "optional": [
+        "targets",
+        "update_rack_status"
+      ]
+    }
+  },
+  "workflows": {
+    "list": {
+      "mandatory": [],
+      "optional": [
+        "workflowStatus",
+        "pageSize",
+        "pageIndex",
+        "exaunitId",
+        "workflowId"
+      ]
+    },
+    "describe": {
+      "mandatory": [
+        "workflowId"
+      ],
+      "optional": []
+    },
+    "undo": {
+      "mandatory": [
+        "workflowId",
+        "taskName"
+      ],
+      "optional": []
+    },
+    "retry": {
+      "mandatory": [
+        "workflowId",
+        "taskName"
+      ],
+      "optional": []
+    },
+    "complete_task": {
+      "mandatory": [
+        "workflowId",
+        "operationId"
+      ],
+      "optional": [
+        "force",
+        "task_output_path"
+      ]
+    },
+    "rollback_mode_on": {
+      "mandatory": [
+        "workflowId"
+      ],
+      "optional": []
+    },
+    "rollback_mode_off": {
+      "mandatory": [
+        "workflowId"
+      ],
+      "optional": []
+    },
+    "rollback": {
+      "mandatory": [
+        "workflowId"
+      ],
+      "optional": []
+    },
+    "operation": {
+      "mandatory": [
+        "operationId"
+      ],
+      "optional": []
+    },
+    "abort": {
+      "mandatory": [
+        "workflowId"
+      ],
+      "optional": [
+        "force"
+      ]
+    },
+    "cancel_task": {
+      "mandatory": [
+        "workflowId",
+        "taskName"
+      ],
+      "optional": []
+    },
+    "fail_task": {
+      "mandatory": [
+        "workflowId",
+        "taskName",
+        "operationId"
+      ],
+      "optional": []
+    },
+    "pause": {
+      "mandatory": [
+        "value"
+      ],
+      "optional": []
+    },
+    "server_status": {
+      "mandatory": [],
+      "optional": []
+    },
+    "reload": {
+      "mandatory": [
+        "oldserver"
+      ],
+      "optional": [
+        "wfuuid"
+      ]
+    },
+    "janitor_restart": {
+      "mandatory": [],
+      "optional": []
+    },
+    "exacloud_success": {
+      "mandatory": [
+        "workflowId",
+        "operationId"
+      ],
+      "optional": []
+    },
+    "getinput": {
+      "mandatory": [
+        "workflowId"
+      ],
+      "optional": [
+        "taskname"
+      ]
+    },
+    "updateinput": {
+      "mandatory": [
+        "workflowId",
+        "jsonpath"
+      ],
+      "optional": [
+        "taskname"
+      ]
+    }
+  },
+  "exacc": {
+    "createNetwork": {
+      "mandatory": [
+        "idemtoken",
+        "json_path"
+      ],
+      "optional": []
+    },
+    "listNetworks": {
+      "mandatory": [
+        "exa_ocid"
+      ],
+      "optional": [
+        "status"
+      ]
+    },
+    "updateNetwork": {
+      "mandatory": [
+        "idemtoken",
+        "json_path"
+      ],
+      "optional": []
+    },
+    "getNetwork": {
+      "mandatory": [
+        "network_ocid"
+      ],
+      "optional": []
+    },
+    "deleteNetwork": {
+      "mandatory": [
+        "network_ocid"
+      ],
+      "optional": []
+    },
+    "validateNetwork": {
+      "mandatory": [
+        "idemtoken",
+        "network_ocid"
+      ],
+      "optional": []
+    },
+    "networkValidationReport": {
+      "mandatory": [
+        "network_ocid"
+      ],
+      "optional": []
+    },
+    "activate": {
+      "mandatory": [
+        "idemtoken",
+        "exacc_ocid",
+        "activation_file"
+      ],
+      "optional": []
+    },
+    "certificateRotation": {
+      "mandatory": [
+        "rotationType"
+      ],
+      "optional": [
+        "exaOcid"
+      ]
+    },
+    "secretServiceCompartment": {
+      "mandatory": [],
+      "optional": []
+    },
+    "secretServiceRotation": {
+      "mandatory": [
+        "rotationType"
+      ],
+      "optional": [
+        "exaOcid",
+        "userName",
+        "password",
+        "force",
+        "listDomUs",
+        "rackName"
+      ]
+    },
+    "wssIngestion": {
+      "mandatory": [
+        "jsonconf"
+      ],
+      "optional": []
+    }
+  },
+  "ocitenants": {
+    "list": {
+      "mandatory": [],
+      "optional": []
+    },
+    "capacity": {
+      "mandatory": [],
+      "optional": [
+        "page",
+        "pagesize",
+        "tenantOcid"
+      ]
+    },
+    "fleetcapacity": {
+      "mandatory": [],
+      "optional": [
+        "page",
+        "pagesize"
+      ]
+    }
+  },
+  "ocicapacity": {
+      "register"          : {
+        "mandatory" : ["jsonconf"],
+        "optional"  : ["idemtoken"]
+      },
+      "details"           : {
+        "mandatory" : ["exaOcid"],
+        "optional"  : []
+      },
+      "update"            : {
+        "mandatory" : ["exaOcid", "jsonconf"],
+        "optional"  : ["idemtoken"]
+      },
+      "delete"            : {
+        "mandatory" : ["exaOcid"],
+        "optional"  : []
+      },
+      "reserve"           : {
+        "mandatory" : ["exaOcid"],
+        "optional"  : ["idemtoken"]
+      },
+      "getconfigbundle"   : {
+        "mandatory" : ["exaOcid", "saveloc"],
+        "optional"  : []
+      },
+      "getcfgbundlecksum" : {
+        "mandatory" : ["exaOcid"],
+        "optional"  : []
+      },
+      "getprivkey"        : {
+        "mandatory" : ["exaOcid", "saveloc"],
+        "optional"  : []
+      },
+      "getcfgbundlepasswd": {
+        "mandatory" : ["exaOcid", "saveloc"],
+        "optional"  : []
+      },
+      "migrateToMvm": {
+        "mandatory" : ["exaOcid"],
+        "optional"  : ["idemtoken", "vmClusterOcid", "networkOcid"]
+      },
+      "enableNs": {
+        "mandatory" : ["exaOcid"],
+        "optional"  : ["idemtoken", "rackname"]
+      },
+      "enableElasticCell": {
+        "mandatory" : ["exaOcid"],
+        "optional"  : ["idemtoken"]
+      },
+      "enableElasticCompute": {
+        "mandatory" : ["exaOcid"],
+        "optional"  : ["idemtoken"]
+      },
+      "migrateVpnToWss": {
+        "mandatory" : ["exaOcid", "phase"],
+        "optional"  : []
+      },
+      "activateCellServers": {
+        "mandatory" : ["exaOcid"],
+        "optional"  : ["idemtoken"]
+      },
+      "attachCellServers": {
+        "mandatory" : ["exaOcid"],
+        "optional"  : ["idemtoken"]
+      },
+     "attachCellServersExascale": {
+        "mandatory" : ["exaOcid"],
+        "optional"  : ["idemtoken"]
+      },
+      "migrateElasticCell": {
+        "mandatory" : ["exaOcid"],
+        "optional"  : ["idemtoken"]
+      },
+      "markCellsToDelete": {
+        "mandatory" : ["exaOcid", "cellList"],
+        "optional"  : []
+      },
+      "restoreAllocations": {
+        "mandatory" : ["exaOcid", "exaunitId"],
+        "optional"  : ["idemtoken"]
+      },
+      "updateAsmss": {
+        "mandatory" : ["exaOcid", "asmss"],
+        "optional"  : []
+      },
+
+      "release": {
+        "mandatory" : ["exaOcid", "rackSlot"],
+        "optional"  : ["idemtoken"]
+      },
+      "updateInfraStatus": {
+        "mandatory" : ["exaOcid", "status"],
+        "optional"  : []
+      },
+      "activateComputes": {
+        "mandatory" : ["exaocid"],
+        "optional"  : ["idemtoken"]
+      },
+      "fixXmlActionTag": {
+        "mandatory" : ["exaOcid"],
+        "optional"  : []
+      },
+      "reserveInfra": {
+        "mandatory" : ["exaOcid"],
+        "optional"  : []
+      },
+      "releaseInfra": {
+        "mandatory" : ["exaOcid"],
+        "optional"  : []
+      },
+      "configureExascale":{
+        "mandatory" : ["exaOcid","storagexsGb"],
+        "optional"  : ["idemtoken","vmstoragexsGb"]
+      },
+      "undoExascale":{ 
+        "mandatory" : ["exaOcid"],
+        "optional"  : ["idemtoken"]
+      },
+     "cleanupmetadata": {
+       "mandatory" : ["exaOcid","idemtoken"],
+       "optional"  : []
+     },
+      "regenerateDBCSWallets":{
+        "mandatory" : ["exaOcid","outputDir","type"],
+        "optional"  : []
+      },
+      "getnatmap"           : {
+        "mandatory" : ["exaOcid"],
+        "optional"  : ["vmClusterOcid"]
+      }
+  },
+  "ocicpinfra": {
+    "savevpnserverdetails": {
+      "mandatory": [
+        "jsonconf"
+      ],
+      "optional": []
+    },
+    "getvpnserverdetails": {
+      "mandatory": [
+        "ad"
+      ],
+      "optional": []
+    },
+    "updatevpnserverdetails": {
+      "mandatory": [
+        "jsonconf"
+      ],
+      "optional": []
+    },
+    "rotatecipherpasswd": {
+      "mandatory": [],
+      "optional": []
+    },
+    "getecracipherpasswd": {
+      "mandatory": [
+        "saveloc"
+      ],
+      "optional": []
+    },
+    "geteallcipherpasswds": {
+      "mandatory": [
+        "saveloc"
+      ],
+      "optional": []
+    },
+    "registervpnhe": {
+      "mandatory": [
+        "jsonconf"
+      ],
+      "optional": []
+    },
+    "updatevpnhe": {
+      "mandatory": [
+        "ip",
+        "jsonconf"
+      ],
+      "optional": []
+    },
+    "getvpnhedetails": {
+      "mandatory": [
+        "ip"
+      ],
+      "optional": []
+    },
+    "getvpnhelist": {
+      "mandatory": [
+        "ad"
+      ],
+      "optional": []
+    }
+  },
+  "profiling": {
+    "report": {
+      "mandatory": [],
+      "optional": [
+        "end_date",
+        "start_date",
+        "interval",
+        "rackname",
+        "alloperations"
+      ]
+    },
+    "operation": {
+      "mandatory": [
+        "taskId"
+      ],
+      "optional": [
+        "end_date",
+        "start_date",
+        "interval",
+        "alloperations",
+        "subtask"
+      ]
+    },
+    "infrastructure": {
+      "mandatory": [
+        "ceiocid"
+      ],
+      "optional": [
+        "end_date",
+        "start_date",
+        "interval",
+        "alloperations"
+      ]
+    }
+  },
+  "compliance": {
+    "scan": {
+      "mandatory": [],
+      "optional": [
+        "host",
+        "rack",
+        "host_type"
+      ]
+    },
+    "default_scan": {
+      "mandatory": [],
+      "optional": []
+    },
+    "base_cfg": {
+      "mandatory": [
+        "justification"
+      ],
+      "optional": [
+        "host",
+        "rack",
+        "host_type"
+      ]
+    },
+    "cfg_status": {
+      "mandatory": [
+        "host"
+      ],
+      "optional": [
+        "cfg_type"
+      ]
+    },
+    "cfg_history": {
+      "list": {
+        "mandatory": [
+          "host"
+        ],
+        "optional": [
+          "search_from",
+          "search_to"
+        ]
+      },
+      "show": {
+        "mandatory": [
+          "change_id"
+        ],
+        "optional": []
+      }
+    },
+    "report_oss_namespace": {
+      "set": {
+        "mandatory": [
+          "value"
+        ],
+        "optional": []
+      },
+      "show": {
+        "mandatory": [],
+        "optional": []
+      }
+    },
+    "auto_revert": {
+      "mandatory": [],
+      "optional": []
+    },
+    "status": {
+      "mandatory": [],
+      "optional": []
+    },
+    "avfim": {
+      "mandatory": [],
+      "optional": [
+        "host",
+        "rack",
+        "component"
+      ]
+    }
+  },
+  "ecspatchversion": {
+    "list": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    }
+  },
+  "ecra": {
+    "validateApis": {
+      "mandatory": [
+        "json_path"
+      ],
+      "optional": []
+    },
+    "dumpConfig": {
+      "mandatory": [
+        "target"
+      ],
+      "optional": []
+    },
+    "coreDump": {
+      "mandatory": [
+        "action",
+        "coredumppath",
+        "exaunitId"
+      ],
+      "optional": []
+    },
+    "upgradeHistory": {
+      "mandatory": [],
+      "optional": [
+        "fromDate"
+      ]
+    },
+    "getfile": {
+      "mandatory": [
+        "filename"
+      ],
+      "optional": []
+    },
+    "check": {
+      "mandatory": [],
+      "optional": []
+    },
+    "deletepayloads": {
+      "mandatory": [
+        "olderthan"
+      ],
+      "optional": [
+        "onlycheck"
+      ]
+    },
+    "connect": {
+      "mandatory": [],
+      "optional": [
+        "hostname"
+      ]
+    },
+    "updatefile": {
+      "mandatory": [
+        "filename",
+        "contentpath"
+      ],
+      "optional": []
+    },
+    "listfiles": {
+      "mandatory": [],
+      "optional": [
+        "rackname",
+        "exaunitid",
+        "maxfiles"
+      ]
+    }
+  },
+  "ecralogs": {
+    "mandatory": [],
+    "optional": [
+      "target_path",
+      "zip",
+      "requestId"
+    ]
+  },
+  "exadata_applied_version": {
+    "list": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    }
+  },
+  "metadata": {
+    "select": {
+      "mandatory": [
+        "table",
+        "select",
+        "where",
+        "values"
+      ],
+      "optional": []
+    },
+    "update": {
+      "mandatory": [
+        "table",
+        "set",
+        "pk"
+      ],
+      "optional": []
+    },
+    "tables": {
+      "mandatory": [],
+      "optional": []
+    }
+  },
+  "exacloud": {
+    "setexassh": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    }
+  },
+  "exaversion": {
+    "patchesreport": {
+      "mandatory": [
+        "status"
+      ],
+      "optional": [
+        "rackName",
+        "cabinetName",
+        "imageVersion",
+        "patchType",
+        "operation"
+      ]
+    },
+    "addservicetype": {
+      "mandatory": [
+        "name"
+      ],
+      "optional": []
+    },
+    "register": {
+      "mandatory": [
+        "imageVersion",
+        "targetTypes"
+      ],
+      "optional": [
+        "serviceType",
+        "exasplice",
+        "comments",
+        "rackModel"
+      ]
+    },
+    "deregisterexaversion": {
+      "mandatory": [
+        "targetType",
+        "serviceType",
+        "rackModel"
+      ],
+      "optional": [
+        "exasplice"
+      ]
+    },
+    "get": {
+      "mandatory": [],
+      "optional": []
+    },
+    "registerimageseries": {
+      "mandatory": [
+        "maxVersion",
+        "seriesLabel",
+        "targetTypes"
+      ],
+      "optional": [
+        "serviceType",
+        "exasplice",
+        "minVersion",
+        "comments"
+      ]
+    },
+    "getimageseries": {
+      "mandatory": [],
+      "optional": []
+    },
+    "listpatches": {
+      "mandatory": [],
+      "optional": []
+    },
+    "listpatchesmetadata": {
+      "mandatory": [
+        "targetTypes",
+        "serviceType",
+        "patchType"
+      ],
+      "optional": []
+    },
+    "purge": {
+      "mandatory": [],
+      "optional": [
+        "patchVersion",
+        "retention"
+      ]
+    }
+  },
+  "analytics": {
+    "analyze": {
+      "mandatory": [
+        "operation"
+      ],
+      "optional": [
+        "interval"
+      ]
+    },
+    "history": {
+      "mandatory": [],
+      "optional": [
+        "start_date",
+        "end_date",
+        "interval",
+        "rackname",
+        "inventoryid",
+        "exadatainfrastructure",
+        "vmclusterid"
+      ]
+    },
+    "stats": {
+      "mandatory": [
+        "operation"
+      ],
+      "optional": [
+        "start_date",
+        "end_date",
+        "interval"
+      ]
+    },
+    "csconfigcheck": {
+      "mandatory": [
+        "exaunitid"
+      ],
+      "optional": [
+        "mandatory",
+        "result"
+      ]
+    },
+    "rack": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": [
+        "operation"
+      ]
+    },
+    "csconfigtemplate": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "getoperationdetails": {
+      "mandatory": [
+        "operation"
+      ],
+      "optional": [
+        "start_date",
+        "end_date"
+      ]
+    },
+    "getpayload": {
+      "mandatory": [
+        "id"
+      ],
+      "optional": []
+    },
+    "info": {
+      "mandatory": [],
+      "optional": [
+        "exaunitid",
+        "rackname",
+        "exadatainfrastructure",
+        "start_date",
+        "end_date",
+        "interval",
+        "vmclusterid"
+      ]
+    }
+  },
+  "patchcps": {
+    "cpsswupgrade": {
+      "mandatory": [
+        "cps_payload"
+      ]
+    },
+    "cpssw_tar_upload": {
+      "mandatory": [
+        "cps_tar_payload"
+      ]
+    }
+  },
+  "patchmetadata": {
+    "registerlaunchnodes": {
+      "mandatory": [
+        "infraType",
+        "launchNodes"
+      ],
+      "optional": [
+        "infraName",
+        "launchNodeType"
+      ]
+    },
+    "deregisterlaunchnodes": {
+      "mandatory": [
+        "infraType"
+      ],
+      "optional": [
+        "infraName",
+        "launchNodes"
+      ]
+    },
+    "getlaunchnodes": {
+      "mandatory": [],
+      "optional": [
+        "infraType",
+        "infraName"
+      ]
+    },
+    "listpluginscripts": {
+      "mandatory": [],
+      "optional": [
+        "PluginType",
+        "PluginTarget",
+        "ScriptAlias"
+      ]
+    },
+    "registerpluginscript": {
+      "mandatory": [
+        "PluginType",
+        "PluginTarget",
+        "ScriptAlias",
+        "ScriptName",
+        "ScriptBundleHash",
+        "ChangeRequestID",
+        "Description"
+      ],
+      "optional": [
+        "IsEnabled",
+        "Phase",
+        "FailOnError"
+      ]
+    },
+    "updatepluginscript": {
+      "mandatory": [
+        "PluginType",
+        "PluginTarget",
+        "ScriptAlias"
+      ],
+      "optional": [
+        "ScriptName",
+        "ScriptBundleHash",
+        "ChangeRequestID",
+        "Description",
+        "IsEnabled",
+        "Phase",
+        "FailOnError"
+      ]
+    },
+    "deregisterpluginscript": {
+      "mandatory": [
+        "PluginType",
+        "PluginTarget",
+        "ScriptAlias"
+      ],
+      "optional": []
+    },
+    "deletelaunchnodemetadata": {
+      "mandatory": [],
+      "optional": [
+        "LaunchNode",
+        "RequestId"
+      ]
+    },
+    "syncvmstate": {
+      "mandatory": [
+        "rackName",
+        "vmCustomerHostName"
+      ],
+      "optional": [
+        "vmState"
+      ]
+    },
+    "syncinfraimages": {
+      "mandatory": [
+        "rackName"
+      ],
+      "optional": [
+        "targetType"
+      ]
+    }
+  },
+  "infrapassword": {
+    "rotate": {
+      "mandatory": [
+        "exaOcid"
+      ],
+      "optional": []
+    },
+    "get": {
+      "mandatory": [
+        "exaOcid"
+      ],
+      "optional": []
+    }
+  },
+  "passwordmanagement": {
+    "rotate": {
+      "mandatory": [
+        "usertype",
+        "username"
+      ],
+      "optional": []
+    },
+    "change": {
+      "mandatory": [
+        "usertype",
+        "username",
+        "newpassword"
+      ],
+      "optional": []
+    },
+    "listuser": {
+      "mandatory": [],
+      "optional": []
+    },
+    "getsiv": {
+      "mandatory": [],
+      "optional": []
+    },
+    "seedsiv": {
+      "mandatory": [
+        "json_path"
+      ],
+      "optional": []
+    },
+    "updatesivinfo": {
+      "mandatory": [
+        "secret_name"
+      ],
+      "optional": []
+    },
+    "validatepassword": {
+      "mandatory": [],
+      "optional": [
+        "username"
+      ]
+    }
+  },
+  "exacompute": {
+    "nodedetail": {
+      "mandatory": [],
+      "optional": [
+        "page",
+        "pagesize",
+        "servicetype"
+      ]
+    },
+    "computecleanup": {
+      "mandatory": [
+        "hostname"
+      ],
+      "optional": []
+    },
+    "clusterhistory": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": []
+    },
+    "hostnameports": {
+      "mandatory": [],
+      "optional": [
+        "hostname",
+        "hwid",
+        "smartnicid"
+      ]
+    },
+    "getfleetstatelock": {
+      "mandatory": [],
+      "optional": [
+        "stateid"
+      ]
+    },
+    "getfleetstate": {
+      "mandatory": [
+        "fleetstatehandle"
+      ],
+      "optional": []
+    },
+    "getfleetstateid": {
+      "mandatory": [],
+      "optional": []
+    },
+    "getlatestfleet": {
+      "mandatory": [],
+      "optional": []
+    },
+    "fleetstateunlock": {
+      "mandatory": [
+        "fleetStateHandle",
+        "fleetLockHandle"
+      ],
+      "optional": []
+    },
+    "updatefleetstate": {
+      "mandatory": [
+        "fleetstatehandle",
+        "fleetLockHandle"
+      ],
+      "optional": [
+        "json_path",
+        "fleetInfrastructure",
+        "plan",
+        "stateid"
+      ]
+    },
+    "addcluster": {
+      "mandatory": [
+        "json_path"
+      ],
+      "optional": [
+        "hostnames",
+        "rackname",
+        "dev"
+      ]
+    },
+    "addclusterprecheck": {
+      "mandatory": [
+        "json_path"
+      ],
+      "optional": [
+        "hostnames"
+      ]
+    },
+    "precheck": {
+      "mandatory": [
+        "hostname"
+      ],
+      "optional": []
+    },
+    "deletecluster": {
+      "mandatory": [
+        "vmclusterid"
+      ],
+      "optional": []
+    },
+    "listcluster": {
+      "mandatory": [],
+      "optional": [
+        "vmclusterid",
+        "type",
+        "verbose"
+      ]
+    },
+    "activecard": {
+      "mandatory": [
+        "oraclehostname"
+      ],
+      "optional": []
+    },
+    "vm": {
+      "mandatory": [
+        "action",
+        "exaUnitId",
+        "vmName"
+      ],
+      "optional": [
+        "sourceDom0",
+        "targetDom0",
+        "force"
+      ]
+    },
+    "createmdcontext": {
+      "mandatory": [
+        "json_path"
+      ],
+      "optional": []
+    },
+    "deletemdcontext": {
+      "mandatory": [
+        "fabricname"
+      ],
+      "optional": []
+    },
+    "updatemdcontext": {
+      "mandatory": [
+        "fabricname",
+        "json_path"
+      ],
+      "optional": []
+    },
+    "getmdcontext": {
+      "mandatory": [
+        "fabricname"
+      ],
+      "optional": []
+    },
+    "createmaintenancedomain": {
+      "mandatory": [
+        "json_path"
+      ],
+      "optional": []
+    },
+    "deletemaintenancedomain": {
+      "mandatory": [
+        "fabricname",
+        "maintenancedomainid"
+      ],
+      "optional": []
+    },
+    "updatemaintenancedomain": {
+      "mandatory": [
+        "fabricname",
+        "maintenancedomainid",
+        "json_path"
+      ],
+      "optional": [
+        "action"
+      ]
+    },
+    "getmdnodes": {
+      "mandatory": [
+        "fabricname",
+        "maintenancedomainid"
+      ],
+      "optional": []
+    },
+    "getmaintenancedomain": {
+      "mandatory": [
+        "fabricname",
+        "maintenancedomainid"
+      ],
+      "optional": []
+    },
+    "listmaintenancedomain": {
+      "mandatory": [
+        "fabricname"
+      ],
+      "optional": []
+    },
+    "computedetail": {
+      "mandatory": [
+        "hostname"
+      ],
+      "optional": []
+    },
+    "updatenodemdmapping": {
+      "mandatory": [
+        "json_path"
+      ],
+      "optional": []
+    },
+    "reshapecluster": {
+      "mandatory": [
+        "vmclusterid"
+      ],
+      "optional": [
+        "cores",
+        "memoryGb",
+        "ohomeSizeGb",
+        "filesystem",
+        "volumes"
+      ]
+    },
+    "initiator": {
+      "mandatory": [
+        "nodefqdn"
+      ],
+      "optional": []
+    },
+    "updateocid": {
+      "mandatory": [
+        "nodeocid",
+        "nodefqdn"
+      ],
+      "optional": []
+    },
+    "gettemplate": {
+      "mandatory": [
+        "type"
+      ],
+      "optional": [
+        "vmclusterocid"
+      ]
+    },
+    "postvolumes": {
+      "mandatory": [
+        "jsonpath"
+      ],
+      "optional": []
+    },
+    "getvolumes": {
+      "mandatory": [],
+      "optional": [
+        "rackname",
+        "hostname",
+        "guestname",
+        "edvvolume"
+      ]
+    },
+    "validatevolumes": {
+      "mandatory": [],
+      "optional": [
+        "rackname",
+        "guestname",
+        "edvvolume",
+        "hostname"
+      ]
+    },
+    "generatesshkeys": {
+      "mandatory": [
+        "hostname"
+      ],
+      "optional": []
+    },
+    "getpublickey": {
+      "mandatory": [
+        "hostname"
+      ],
+      "optional": []
+    },
+    "getvaultaccess": {
+      "mandatory": [
+        "vaultaccessid"
+      ],
+      "optional": []
+    },
+    "updatevaultaccessdetails": {
+      "mandatory": [
+        "jsonpath"
+      ],
+      "optional": []
+    },
+    "deletevaultaccessdetails": {
+      "mandatory": [],
+      "optional": [
+        "hostname",
+        "vaultaccessid"
+      ]
+    },
+    "precheckedvvolumes": {
+      "mandatory": [
+        "jsonpath"
+      ],
+      "optional": []
+    },
+    "getnathostnames": {
+      "mandatory": [
+        "hostname"
+      ],
+      "optional": []
+    },
+    "rackreserve": {
+      "mandatory": [
+        "vmclusterid",
+        "hostnames"
+      ],
+      "optional": [
+        "idemtoken"
+      ]
+    },
+    "guestreserve": {
+      "mandatory": [
+        "vmclusterid",
+        "hostnames"
+      ],
+      "optional": [
+        "idemtoken"
+      ]
+    },
+    "guestrelease": {
+      "mandatory": [
+        "vmclusterid",
+        "hostnames"
+      ],
+      "optional": [
+        "idemtoken"
+      ]
+    },
+    "snapshotmount": {
+      "mandatory": [
+        "jsonpath"
+      ],
+      "optional": [
+        "idemtoken",
+        "vminstanceid"
+      ]
+    },
+    "snapshotunmount": {
+      "mandatory": [
+        "jsonpath"
+      ],
+      "optional": [
+        "idemtoken",
+        "vminstanceid"
+      ]
+    },
+    "listsystemvault": {
+      "mandatory": [],
+      "optional": [
+        "vaultid"
+      ]
+    },
+    "updatesystemvault": {
+      "mandatory": [
+        "vaultid",
+        "jsonpath"
+      ],
+      "optional": []
+    },
+    "deletesystemvault": {
+      "mandatory": [
+        "vaultid"
+      ],
+      "optional": []
+    },
+    "createsystemvault": {
+      "mandatory": [
+        "jsonpath"
+      ],
+      "optional": []
+    },
+    "updatefleetnode": {
+      "mandatory": [
+        "hostname",
+        "jsonpath"
+      ],
+      "optional": []
+    },
+    "clusterdetail": {
+      "mandatory": [
+        "vmclusterid"
+      ],
+      "optional": []
+    },
+    "securevms": {
+      "mandatory": [
+        "vmclusterid"
+      ],
+      "optional": [
+        "payload",
+        "idemtoken"
+      ]
+    },
+    "removenodexml": {
+      "mandatory": [
+        "rackname",
+        "dom0"
+      ],
+      "optional": []
+    },
+    "configureroceips": {
+      "mandatory": [
+        "hostname"
+      ],
+      "optional": [
+        "idemtoken"
+      ]
+    },
+    "deconfigureroceips": {
+      "mandatory": [
+        "hostname"
+      ],
+      "optional": [
+        "idemtoken"
+      ]
+    },
+    "cleanuprequest": {
+      "mandatory": [
+        "requestid",
+        "failedhost"
+      ],
+      "optional": [
+        "opc-request-id"
+      ]
+    },
+    "updatefabricfleet": {
+      "mandatory": [
+        "fabricname",
+        "operation"
+      ],
+      "optional": [
+        "cloudvendor",
+        "cloudproviderregion",
+        "cloudproviderbuilding",
+        "cloudprovideraz",
+        "sitegroup"
+      ]
+    },
+    "dbvolumes": {
+      "mandatory": [
+        "vmclusterocid",
+        "operation",
+        "jsonpath"
+      ],
+      "optional": [
+        "opc-request-id"
+      ]
+    },
+    "runfleetjsoncheck": {
+      "mandatory": [],
+      "optional": [
+        "opc-request-id"
+      ]
+    },
+    "getdomus": {
+      "mandatory": [
+        "hostname"
+      ],
+      "optional": []
+    },
+    "getvmclusterdetails": {
+      "mandatory": [
+        "vmclusterocid"
+      ],
+      "optional": [
+        "opc-request-id"
+      ]
+    }
+  },
+  "agent": {
+    "request": {
+      "mandatory": [
+        "method",
+        "url",
+        "exaunit",
+        "domu"
+      ],
+      "optional": [
+        "payload",
+        "token"
+      ]
+    },
+    "dataplane_settings": {
+      "mandatory": [
+        "payload"
+      ],
+      "optional": []
+    }
+  },
+  "sla": {
+    "get_average_all": {
+      "mandatory": [],
+      "optional": [
+        "measure_from",
+        "measure_to"
+      ]
+    },
+    "get_average": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": [
+        "measure_from",
+        "measure_to"
+      ]
+    },
+    "get_average_tenancy": {
+      "mandatory": [
+        "tenancy_ocid"
+      ],
+      "optional": [
+        "measure_from",
+        "measure_to"
+      ]
+    },
+    "get_details": {
+      "mandatory": [
+        "rackname",
+        "measure_from",
+        "measure_to"
+      ],
+      "optional": []
+    },
+    "get_details_infra": {
+      "mandatory": [
+        "infraOcid",
+        "measure_from",
+        "measure_to"
+      ],
+      "optional": []
+    },
+    "tenancy_turnon": {
+      "mandatory": [
+        "tenancy_ocid"
+      ],
+      "optional": []
+    },
+    "tenancy_turnoff": {
+      "mandatory": [
+        "tenancy_ocid"
+      ],
+      "optional": []
+    },
+    "get_turnedon_tenancy": {
+      "mandatory": [],
+      "optional": []
+    },
+    "get_tenant_report": {
+      "mandatory": [
+        "tenancyOcid"
+      ],
+      "optional": [
+        "measureFrom",
+        "measureTo"
+      ]
+    },
+    "get_cei_report": {
+      "mandatory": [
+        "cei"
+      ],
+      "optional": [
+        "measureFrom",
+        "measureTo"
+      ]
+    },
+    "get_vm_report": {
+      "mandatory": [
+        "vm"
+      ],
+      "optional": [
+        "measureFrom",
+        "measureTo"
+      ]
+    }
+  },
+  "topology": {
+    "get_topology_for_ad": {
+      "mandatory": [
+        "ad",
+        "service"
+      ],
+      "optional": [
+        "rackname",
+        "switchname",
+        "clustername",
+        "vmclusterocid",
+        "page",
+        "pagesize",
+        "version"
+      ]
+    },
+    "get_network_switch_for_ad": {
+      "mandatory": [
+        "ad"
+      ],
+      "optional": [
+        "physicalRackNumber"
+      ]
+    }
+  },
+  "cache": {
+    "purge": {
+      "mandatory": [
+        "type"
+      ],
+      "optional": []
+    }
+  },
+  "errorcode": {
+    "get": {
+      "mandatory": [
+        "code"
+      ],
+      "optional": []
+    },
+    "category": {
+      "mandatory": [
+        "code"
+      ],
+      "optional": []
+    },
+    "endpoint": {
+      "mandatory": [
+        "name"
+      ],
+      "optional": []
+    }
+  },
+  "preprov": {
+    "scheduler": {
+      "mandatory": [
+        "operation"
+      ],
+      "optional": []
+    },
+    "jobs": {
+      "get": {
+        "mandatory": [],
+        "optional": [
+          "job"
+        ]
+      },
+      "update": {
+        "mandatory": [
+          "job"
+        ],
+        "optional": [
+          "enabled",
+          "configuration"
+        ]
+      }
+    },
+    "deleterackresources": {
+      "mandatory": [
+        "rackname"
+      ],
+      "optional": [
+        "keepvnic",
+        "keepcompute",
+        "keepdns"
+      ]
+    },
+    "capacitymove": {
+      "mandatory": [
+        "exadatainfrastructureid"
+      ],
+      "optional": []
+    },
+    "vcn": {
+      "get": {
+        "mandatory": [],
+        "optional": []
+      }
+    },
+    "subnet": {
+      "get": {
+        "mandatory": [],
+        "optional": []
+      }
+    },
+    "vnics": {
+      "get": {
+        "mandatory": [],
+        "optional": [
+          "rackname"
+        ]
+      }
+    }
+  },
+  "oci": {
+    "connectivity": {
+      "check": {
+        "mandatory": [],
+        "optional": [
+          "compartmentid"
+        ]
+      }
+    },
+    "compute": {
+      "create": {
+        "mandatory": [
+          "vnicid",
+          "availabilitydomain",
+          "subnetid",
+          "hostnamelabel",
+          "displayname",
+          "compartmentid",
+          "shape",
+          "serialnumber",
+          "vlantag"
+        ],
+        "optional": []
+      },
+      "delete": {
+        "mandatory": [
+          "instanceid"
+        ],
+        "optional": []
+      },
+      "get": {
+        "mandatory": [],
+        "optional": [
+          "instanceid",
+          "caviumid",
+          "compartmentid"
+        ]
+      },
+      "createvnic": {
+        "mandatory": [
+          "hostnamelabel",
+          "subnetid",
+          "compartmentid",
+          "availabilitydomain",
+          "isprimary"
+        ],
+        "optional": []
+      },
+      "getvnic": {
+        "mandatory": [
+          "vnicid"
+        ],
+        "optional": [
+          "compartmentid"
+        ]
+      },
+      "deletevnic": {
+        "mandatory": [
+          "vnicid"
+        ],
+        "optional": []
+      },
+      "attachvnic": {
+        "mandatory": [
+          "instanceid",
+          "vnicid",
+          "vlantag",
+          "macaddress"
+        ],
+        "optional": []
+      },
+      "detachvnic": {
+        "mandatory": [
+          "instanceid",
+          "vnicattachmentid"
+        ],
+        "optional": [
+          "preservevnic",
+          "compartmentid"
+        ]
+      },
+      "createfloatingip": {
+        "mandatory": [
+          "hostnamelabel",
+          "vnicid"
+        ],
+        "optional": [
+          "vlantag",
+          "ip"
+        ]
+      },
+      "getFloatingip": {
+        "mandatory": [
+          "ipId"
+        ],
+        "optional": []
+      },
+      "mapFloatingip": {
+        "mandatory": [
+          "ipId",
+          "vnicid"
+        ],
+        "optional": []
+      },
+      "unmapFloatingip": {
+        "mandatory": [
+          "ipId"
+        ],
+        "optional": []
+      },
+      "updateFloatingip": {
+        "mandatory": [
+          "ipId"
+        ],
+        "optional": [
+          "hostnameLabel",
+          "lifetime"
+        ]
+      },
+      "deletefloatingip": {
+        "mandatory": [
+          "floatingipid"
+        ],
+        "optional": []
+      },
+      "listvnics": {
+        "mandatory": [
+          "compartmentid"
+        ],
+        "optional": []
+      },
+      "listips": {
+        "mandatory": [
+          "vnicid"
+        ],
+        "optional": []
+      }
+    },
+    "network": {
+      "configuredns": {
+        "mandatory": [
+          "subnetid",
+          "fqdn",
+          "ips"
+        ],
+        "optional": []
+      },
+      "deletedns": {
+        "mandatory": [
+          "subnetid",
+          "fqdn"
+        ],
+        "optional": []
+      },
+      "getdns": {
+        "mandatory": [
+          "subnetid",
+          "fqdn"
+        ],
+        "optional": []
+      }
+    }
+  },
+  "domu": {
+    "get": {
+      "mandatory": [
+        "name"
+      ],
+      "optional": [
+        "resumelevel"
+      ]
+    },
+    "search": {
+      "mandatory": [],
+      "optional": [
+        "cabinetid",
+        "hwid",
+        "exaunitid",
+        "computehostname",
+        "rackname",
+        "resumelevel",
+        "vmid",
+        "nathostname",
+        "clienthostname",
+        "adminip",
+        "dbclientvlantag"
+      ]
+    },
+    "deletebadhostname": {
+      "mandatory": [
+        "nathostname"
+      ],
+      "optional": []
+    }
+  },
+  "user": {
+    "getall": {
+      "mandatory": [],
+      "optional": []
+    },
+    "get": {
+      "mandatory": [
+        "userid"
+      ],
+      "optional": []
+    },
+    "resetpassword": {
+      "mandatory": [
+        "userid",
+        "newpassword"
+      ],
+      "optional": []
+    },
+    "create": {
+      "mandatory": [
+        "userid"
+      ],
+      "optional": [
+        "password",
+        "active",
+        "createdby",
+        "modifiedby",
+        "createdat",
+        "deletedat",
+        "updatedat",
+        "firstname",
+        "lastname",
+        "roleid",
+        "reusesiv"
+      ]
+    },
+    "update": {
+      "mandatory": [
+        "id",
+        "userid",
+        "firstname",
+        "lastname",
+        "roleid",
+        "password"
+      ],
+      "optional": [
+        "active",
+        "createdby",
+        "modifiedby",
+        "createdat",
+        "deletedat",
+        "updatedat"
+      ]
+    },
+    "delete": {
+      "mandatory": [
+        "userid"
+      ],
+      "optional": []
+    },
+    "activate": {
+      "mandatory": [
+        "userid"
+      ],
+      "optional": []
+    },
+    "deactivate": {
+      "mandatory": [
+        "id"
+      ],
+      "optional": []
+    },
+    "refreshcredentials": {
+      "mandatory": [
+        "id"
+      ],
+      "optional": []
+    }
+  },
+  "ingestion": {
+    "import": {
+      "mandatory": [
+        "action",
+        "cabinetname",
+        "cabinetjson"
+      ],
+      "optional": []
+    }
+  },
+  "vmconsole": {
+    "deployment": {
+      "mandatory": [
+        "action"
+      ],
+      "optional": [
+        "exaunitId",
+        "exaOcid",
+        "dom0"
+      ]
+    },
+    "enable": {
+      "mandatory": [
+        "exaOcid"
+      ],
+      "optional": []
+    }
+  },
+  "sop": {
+    "request": {
+      "mandatory": [
+        "jsonpayload"
+      ],
+      "optional": [
+        "exaocid"
+      ]
+    },
+    "list": {
+      "mandatory": [],
+      "optional": [
+        "exaocid"
+      ]
+    },
+    "cancel": {
+      "mandatory": [
+        "jsonpayload"
+      ],
+      "optional": [
+        "exaocid"
+      ]
+    }
+  },
+  "sitegroup": {
+    "list": {
+      "mandatory": [],
+      "optional": []
+    },
+    "add": {
+      "mandatory": [
+        "building",
+        "name",
+        "restricted",
+        "ad",
+        "cloudvendor",
+        "cloudproviderregion",
+        "region"
+      ],
+      "optional": [
+        "cloudprovideraz",
+        "cloudproviderbuilding",
+        "mtu",
+        "farchildsite",
+        "overlaybridgeused",
+        "dbaastoolsrpm",
+        "dbaastoolsrpmchecksum"
+      ]
+    },
+    "update": {
+      "mandatory": [
+        "name"
+      ],
+      "optional": []
+    },
+    "updaterpm": {
+      "mandatory": [
+        "cloudvendor",
+        "dbaastoolsrpm"
+      ],
+      "optional": [
+        "dbaastoolsrpmchecksum"
+      ]
+    },
+    "configurefeature": {
+      "mandatory": [
+        "name",
+        "feature",
+        "value"
+      ],
+      "optional": []
+    }
+  },
+  "artifact": {
+    "deliver": {
+      "mandatory": [
+        "artifactname",
+        "source",
+        "target"
+      ],
+      "optional": [
+        "id",
+        "targetname",
+        "targetstate",
+        "model",
+        "clustertag",
+        "type"
+      ]
+    },
+    "deliver_status": {
+      "mandatory": [
+        "statusid"
+      ],
+      "optional": []
+    }
+  },
+  "compatibility": {
+    "list": {
+      "mandatory": [],
+      "optional": [
+        "operationname"
+      ]
+    },
+    "add": {
+      "mandatory": [
+        "operationname",
+        "secondoperation"
+      ],
+      "optional": []
+    },
+    "remove": {
+      "mandatory": [
+        "operationname",
+        "secondoperation"
+      ],
+      "optional": []
+    },
+    "check": {
+      "mandatory": [
+        "operationname",
+        "secondoperation"
+      ],
+      "optional": []
+    },
+    "validoperations": {
+      "mandatory": [],
+      "optional": []
+    }
+  },
+  "vault": {
+    "details": {
+      "mandatory": [
+        "exaOcid"
+      ],
+      "optional": []
+    }
+  },
+  "faultinjection": {
+    "listinfra": {
+      "mandatory": [],
+      "optional": []
+    },
+    "addinfra": {
+      "mandatory": [
+        "infraocid"
+      ],
+      "optional": []
+    },
+    "deleteinfra": {
+      "mandatory": [
+        "infraocid"
+      ],
+      "optional": []
+    }
+  },
+  "resourceblackout": {
+    "getlatest": {
+      "mandatory": [
+        "resourcename"
+      ],
+      "optional": [
+        "audit"
+      ]
+    },
+    "gethistory": {
+      "mandatory": [
+        "resourcename"
+      ],
+      "optional": [
+        "daylimit"
+      ]
+    },
+    "getenabled": {
+      "mandatory": [],
+      "optional": []
+    },
+    "create": {
+      "mandatory": [
+        "payload"
+      ],
+      "optional": []
+    },
+    "update": {
+      "mandatory": [
+        "resourcename",
+        "payload"
+      ],
+      "optional": []
+    },
+    "refresh": {
+      "mandatory": [
+        "resourcename"
+      ],
+      "optional": []
+    },
+    "disable": {
+      "mandatory": [
+        "resourcename"
+      ],
+      "optional": []
+    }
+  },
+  "exascale": {
+    "ersip": {
+      "get": {
+        "mandatory": [],
+        "optional": [
+          "ocid",
+          "cabinet_name",
+          "ip_state"
+        ]
+      },
+      "register": {
+        "mandatory": [],
+        "optional": [
+          "ocid",
+          "ip",
+          "cabinet_name",
+          "ip_state",
+          "flat_file",
+          "configfile"
+        ]
+      },
+      "delete": {
+        "mandatory": [
+          "ocid"
+        ],
+        "optional": []
+      }
+    }
+  }
+}

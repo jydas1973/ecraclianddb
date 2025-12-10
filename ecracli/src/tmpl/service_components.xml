@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns2:create xmlns:ns2="http://objectmodel.common.sdi.cloud9.oracle.com">
+    <requestId><id>CIM_0000#0</id></requestId>
+    <servicesToCreate>
+        <admin>
+            <userName>ecracli@oracle.com</userName>
+            <firstName>ecracli</firstName>
+            <lastName>ecracli</lastName>
+            <email>ecracli@oracle.com</email>
+        </admin>
+        <systemName>ecraclidomain</systemName>
+        <name>testinstance</name>
+        <serviceInstanceType>Exadata</serviceInstanceType>
+        <serviceSize>CUSTOM</serviceSize>
+        <serviceSpecificProps><key>ExaUnitName</key><value>testsys</value><secured>false</secured></serviceSpecificProps>
+        <serviceSpecificProps><key>BackupToDisk</key><value>Y</value><secured>false</secured></serviceSpecificProps>
+        <serviceSpecificProps><key>PickRackSize</key><value>Quarter Rack</value><secured>false</secured></serviceSpecificProps>
+        <serviceSpecificProps><key>CreateSparse</key><value>false</value></serviceSpecificProps>
+        <serviceSpecificProps><key>source</key><value>TAS</value><secured>false</secured></serviceSpecificProps>
+        <serviceSpecificProps><key>datacenter.id</key><value>US1</value><secured>false</secured></serviceSpecificProps>
+        <serviceSpecificProps><key>datacenter.name</key><value>US Commercial 1</value><secured>false</secured></serviceSpecificProps>
+        <serviceSpecificProps><key>datacenter.region.id</key><value>RG001</value><secured>false</secured></serviceSpecificProps>
+        <serviceSpecificProps><key>datacenter.region.name</key><value>North_America</value><secured>false</secured></serviceSpecificProps>
+        <serviceSpecificProps><key>deployment.type</key><value>DEVELOPMENT</value><secured>false</secured></serviceSpecificProps>
+        <serviceSpecificProps><key>metering.enabled</key><value>false</value><secured>false</secured></serviceSpecificProps>
+        <serviceSpecificProps><key>service.entitlementid</key><value>00000001</value><secured>false</secured></serviceSpecificProps>
+        <serviceSpecificProps><key>user.name</key><value>ecracli@oracle.com</value><secured>false</secured></serviceSpecificProps>
+        <serviceSpecificProps><key>gsi.subscription.id</key><value>000000001</value><secured>false</secured></serviceSpecificProps>
+        <serviceSpecificProps><key>entitlement.category</key><value>CLOUD_CREDIT</value><secured>false</secured></serviceSpecificProps>
+        <serviceSpecificProps><key>ipnet</key><value>N</value><secured>false</secured></serviceSpecificProps>
+        <serviceSpecificProps><key>provisioning.listener</key><value>http://ott00adv.ca.oracle.com:7103/paas/api/v1.1/listeners/provisioning-listener</value><secured>false</secured></serviceSpecificProps>
+        <serviceSpecificProps><key>fa.components</key><value><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<FAComponentsPayload>
+    <serviceComponent>
+        <component_id>7505623</component_id>
+        <component_parameter>
+            <key>IS_ADDITIONAL_INSTANCE</key>
+            <value>N</value>
+        </component_parameter>
+        <component_parameter>
+            <key>LICENSE_PART_DESCRIPTION</key>
+            <value>Oracle Exadata Cloud Service - Quarter Rack - Hosted Environment
+                  Product Bundle v1</value>
+        </component_parameter>
+        <component_parameter>
+            <key>HOSTED ENVIRONMENT</key>
+            <value>1</value>
+        </component_parameter>
+        <component_parameter>
+            <key>METRIC_NAME</key>
+            <value>HOSTED ENVIRONMENT</value>
+        </component_parameter>
+        <component_parameter>
+            <key>IS_BASE_SERVICE_COMPONENT</key>
+            <value>Y</value>
+        </component_parameter>
+        <component_parameter>
+            <key>GSI_ORDER_LINE_ID</key>
+            <value>1391898091</value>
+        </component_parameter>
+        <component_parameter>
+            <key>SERVICE_PART_DESCRIPTION</key>
+            <value>Oracle Exadata Cloud Service - Quarter Rack - Hosted Environment</value>
+        </component_parameter>
+        <service_component_id>B86220</service_component_id>
+        <start_date>2016-06-21 05:22:30.661</start_date>
+        <end_date>2016-02-20 07:57:26.95</end_date>
+        <component>
+            <component_id>7505624</component_id>
+            <component_parameter>
+                <key>SERVICE_PART_ID</key>
+            </component_parameter>
+            <component_parameter>
+                <key>SERVICE_PART_DESCRIPTION</key>
+            </component_parameter>
+            <component_parameter>
+                <key>BLOCK_QUANTITY</key>
+                <value>1</value>
+            </component_parameter>
+            <component_parameter>
+                <key>LICENSE_PART_DESCRIPTION</key>
+                <value>Oracle Exadata Cloud Service - OCPU's</value>
+            </component_parameter>
+            <component_parameter>
+                <key>OCPU PER MONTH</key>
+                <value>16</value>
+            </component_parameter>
+        </component>
+        <component>
+            <component_id>7505625</component_id>
+            <component_parameter>
+                <key>SERVICE_PART_DESCRIPTION</key>
+            </component_parameter>
+            <component_parameter>
+                <key>GIGABYTE</key>
+                <value>496</value>
+            </component_parameter>
+            <component_parameter>
+                <key>SERVICE_PART_ID</key>
+            </component_parameter>
+            <component_parameter>
+                <key>BLOCK_QUANTITY</key>
+                <value>1</value>
+            </component_parameter>
+            <component_parameter>
+                <key>LICENSE_PART_DESCRIPTION</key>
+                <value>Oracle Exadata Cloud Service - Memory in GB</value>
+            </component_parameter>
+        </component>
+        <component>
+            <component_id>7505626</component_id>
+            <component_parameter>
+                <key>LICENSE_PART_DESCRIPTION</key>
+                <value>Oracle Exadata Cloud Service - TB of Storage Capacity</value>
+            </component_parameter>
+            <component_parameter>
+                <key>SERVICE_PART_ID</key>
+            </component_parameter>
+            <component_parameter>
+                <key>BLOCK_QUANTITY</key>
+                <value>1</value>
+            </component_parameter>
+            <component_parameter>
+                <key>TB OF STORAGE CAPACITY</key>
+                <value>42</value>
+            </component_parameter>
+            <component_parameter>
+                <key>SERVICE_PART_DESCRIPTION</key>
+            </component_parameter>
+        </component>
+    </serviceComponent>
+    
+    <!-- Added by Niloy on Dec 14, 2015 -->
+    <serviceComponent>
+        <component_id>7503458</component_id>
+        <component_parameter>
+            <key>SERVICE_PART_DESCRIPTION</key>
+            <value>Oracle Exadata Cloud Service - Additional OCPU's - OCPU per
+                  Month</value>
+        </component_parameter>
+        <component_parameter>
+            <key>GSI_ORDER_LINE_ID</key>
+            <value>1391898108</value>
+        </component_parameter>
+        <component_parameter>
+            <key>METRIC_NAME</key>
+            <value>OCPU PER MONTH</value>
+        </component_parameter>
+        <component_parameter>
+            <key>LICENSE_PART_DESCRIPTION</key>
+            <value>Oracle Exadata Cloud Service - Additional OCPU's - OCPU per
+                  Month Product</value>
+        </component_parameter>
+        <component_parameter>
+            <key>OCPU PER MONTH</key>
+            <value>0</value>
+        </component_parameter>
+        <component_parameter>
+            <key>IS_ADDITIONAL_INSTANCE</key>
+            <value>N</value>
+        </component_parameter>
+        <component_parameter>
+            <key>IS_BASE_SERVICE_COMPONENT</key>
+            <value>N</value>
+        </component_parameter>
+        <service_component_id>B81636</service_component_id>
+        <start_date>2016-06-21 05:22:30.661</start_date>
+        <end_date>2016-02-20 07:57:26.95</end_date>
+    </serviceComponent>
+</FAComponentsPayload>
+]]></value><secured>false</secured></serviceSpecificProps>
+        <serviceSpecificProps><key>order.components</key><value>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPE9yZGVyQ29tcG9uZW50cz4KICAgIDxzZXJ2aWNlQ29tcG9uZW50PgogICAgICAgIDxjb21wb25lbnRfaWQ+NzUwNTYyMzwvY29tcG9uZW50X2lkPgogICAgICAgIDxjb21wb25lbnRfcGFyYW1ldGVyPgogICAgICAgICAgICA8a2V5PklTX0FERElUSU9OQUxfSU5TVEFOQ0U8L2tleT4KICAgICAgICAgICAgPHZhbHVlPk48L3ZhbHVlPgogICAgICAgIDwvY29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICA8Y29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICAgICAgPGtleT5MSUNFTlNFX1BBUlRfREVTQ1JJUFRJT048L2tleT4KICAgICAgICAgICAgPHZhbHVlPk9yYWNsZSBFeGFkYXRhIENsb3VkIFNlcnZpY2UgLSBRdWFydGVyIFJhY2sgLSBIb3N0ZWQgRW52aXJvbm1lbnQKICAgICAgICAgICAgICAgICAgUHJvZHVjdCBCdW5kbGUgdjE8L3ZhbHVlPgogICAgICAgIDwvY29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICA8Y29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICAgICAgPGtleT5IT1NURUQgRU5WSVJPTk1FTlQ8L2tleT4KICAgICAgICAgICAgPHZhbHVlPjE8L3ZhbHVlPgogICAgICAgIDwvY29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICA8Y29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICAgICAgPGtleT5NRVRSSUNfTkFNRTwva2V5PgogICAgICAgICAgICA8dmFsdWU+SE9TVEVEIEVOVklST05NRU5UPC92YWx1ZT4KICAgICAgICA8L2NvbXBvbmVudF9wYXJhbWV0ZXI+CiAgICAgICAgPGNvbXBvbmVudF9wYXJhbWV0ZXI+CiAgICAgICAgICAgIDxrZXk+SVNfQkFTRV9TRVJWSUNFX0NPTVBPTkVOVDwva2V5PgogICAgICAgICAgICA8dmFsdWU+WTwvdmFsdWU+CiAgICAgICAgPC9jb21wb25lbnRfcGFyYW1ldGVyPgogICAgICAgIDxjb21wb25lbnRfcGFyYW1ldGVyPgogICAgICAgICAgICA8a2V5PkdTSV9PUkRFUl9MSU5FX0lEPC9rZXk+CiAgICAgICAgICAgIDx2YWx1ZT4xMzkxODk4MDkxPC92YWx1ZT4KICAgICAgICA8L2NvbXBvbmVudF9wYXJhbWV0ZXI+CiAgICAgICAgPGNvbXBvbmVudF9wYXJhbWV0ZXI+CiAgICAgICAgICAgIDxrZXk+U0VSVklDRV9QQVJUX0RFU0NSSVBUSU9OPC9rZXk+CiAgICAgICAgICAgIDx2YWx1ZT5PcmFjbGUgRXhhZGF0YSBDbG91ZCBTZXJ2aWNlIC0gUXVhcnRlciBSYWNrIC0gSG9zdGVkIEVudmlyb25tZW50PC92YWx1ZT4KICAgICAgICA8L2NvbXBvbmVudF9wYXJhbWV0ZXI+CiAgICAgICAgPHNlcnZpY2VfY29tcG9uZW50X2lkPkI4NjIyMDwvc2VydmljZV9jb21wb25lbnRfaWQ+CiAgICAgICAgPHN0YXJ0X2RhdGU+MjAxNi0wNi0yMSAwNToyMjozMC42NjE8L3N0YXJ0X2RhdGU+CiAgICAgICAgPGVuZF9kYXRlPjIwMTYtMDItMjAgMDc6NTc6MjYuOTU8L2VuZF9kYXRlPgogICAgICAgIDxjb21wb25lbnQ+CiAgICAgICAgICAgIDxjb21wb25lbnRfaWQ+NzUwNTYyNDwvY29tcG9uZW50X2lkPgogICAgICAgICAgICA8Y29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICAgICAgICAgIDxrZXk+U0VSVklDRV9QQVJUX0lEPC9rZXk+CiAgICAgICAgICAgIDwvY29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICAgICAgPGNvbXBvbmVudF9wYXJhbWV0ZXI+CiAgICAgICAgICAgICAgICA8a2V5PlNFUlZJQ0VfUEFSVF9ERVNDUklQVElPTjwva2V5PgogICAgICAgICAgICA8L2NvbXBvbmVudF9wYXJhbWV0ZXI+CiAgICAgICAgICAgIDxjb21wb25lbnRfcGFyYW1ldGVyPgogICAgICAgICAgICAgICAgPGtleT5CTE9DS19RVUFOVElUWTwva2V5PgogICAgICAgICAgICAgICAgPHZhbHVlPjE8L3ZhbHVlPgogICAgICAgICAgICA8L2NvbXBvbmVudF9wYXJhbWV0ZXI+CiAgICAgICAgICAgIDxjb21wb25lbnRfcGFyYW1ldGVyPgogICAgICAgICAgICAgICAgPGtleT5MSUNFTlNFX1BBUlRfREVTQ1JJUFRJT048L2tleT4KICAgICAgICAgICAgICAgIDx2YWx1ZT5PcmFjbGUgRXhhZGF0YSBDbG91ZCBTZXJ2aWNlIC0gT0NQVSdzPC92YWx1ZT4KICAgICAgICAgICAgPC9jb21wb25lbnRfcGFyYW1ldGVyPgogICAgICAgICAgICA8Y29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICAgICAgICAgIDxrZXk+T0NQVSBQRVIgTU9OVEg8L2tleT4KICAgICAgICAgICAgICAgIDx2YWx1ZT4xNjwvdmFsdWU+CiAgICAgICAgICAgIDwvY29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICA8L2NvbXBvbmVudD4KICAgICAgICA8Y29tcG9uZW50PgogICAgICAgICAgICA8Y29tcG9uZW50X2lkPjc1MDU2MjU8L2NvbXBvbmVudF9pZD4KICAgICAgICAgICAgPGNvbXBvbmVudF9wYXJhbWV0ZXI+CiAgICAgICAgICAgICAgICA8a2V5PlNFUlZJQ0VfUEFSVF9ERVNDUklQVElPTjwva2V5PgogICAgICAgICAgICA8L2NvbXBvbmVudF9wYXJhbWV0ZXI+CiAgICAgICAgICAgIDxjb21wb25lbnRfcGFyYW1ldGVyPgogICAgICAgICAgICAgICAgPGtleT5HSUdBQllURTwva2V5PgogICAgICAgICAgICAgICAgPHZhbHVlPjQ5NjwvdmFsdWU+CiAgICAgICAgICAgIDwvY29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICAgICAgPGNvbXBvbmVudF9wYXJhbWV0ZXI+CiAgICAgICAgICAgICAgICA8a2V5PlNFUlZJQ0VfUEFSVF9JRDwva2V5PgogICAgICAgICAgICA8L2NvbXBvbmVudF9wYXJhbWV0ZXI+CiAgICAgICAgICAgIDxjb21wb25lbnRfcGFyYW1ldGVyPgogICAgICAgICAgICAgICAgPGtleT5CTE9DS19RVUFOVElUWTwva2V5PgogICAgICAgICAgICAgICAgPHZhbHVlPjE8L3ZhbHVlPgogICAgICAgICAgICA8L2NvbXBvbmVudF9wYXJhbWV0ZXI+CiAgICAgICAgICAgIDxjb21wb25lbnRfcGFyYW1ldGVyPgogICAgICAgICAgICAgICAgPGtleT5MSUNFTlNFX1BBUlRfREVTQ1JJUFRJT048L2tleT4KICAgICAgICAgICAgICAgIDx2YWx1ZT5PcmFjbGUgRXhhZGF0YSBDbG91ZCBTZXJ2aWNlIC0gTWVtb3J5IGluIEdCPC92YWx1ZT4KICAgICAgICAgICAgPC9jb21wb25lbnRfcGFyYW1ldGVyPgogICAgICAgIDwvY29tcG9uZW50PgogICAgICAgIDxjb21wb25lbnQ+CiAgICAgICAgICAgIDxjb21wb25lbnRfaWQ+NzUwNTYyNjwvY29tcG9uZW50X2lkPgogICAgICAgICAgICA8Y29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICAgICAgICAgIDxrZXk+TElDRU5TRV9QQVJUX0RFU0NSSVBUSU9OPC9rZXk+CiAgICAgICAgICAgICAgICA8dmFsdWU+T3JhY2xlIEV4YWRhdGEgQ2xvdWQgU2VydmljZSAtIFRCIG9mIFN0b3JhZ2UgQ2FwYWNpdHk8L3ZhbHVlPgogICAgICAgICAgICA8L2NvbXBvbmVudF9wYXJhbWV0ZXI+CiAgICAgICAgICAgIDxjb21wb25lbnRfcGFyYW1ldGVyPgogICAgICAgICAgICAgICAgPGtleT5TRVJWSUNFX1BBUlRfSUQ8L2tleT4KICAgICAgICAgICAgPC9jb21wb25lbnRfcGFyYW1ldGVyPgogICAgICAgICAgICA8Y29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICAgICAgICAgIDxrZXk+QkxPQ0tfUVVBTlRJVFk8L2tleT4KICAgICAgICAgICAgICAgIDx2YWx1ZT4xPC92YWx1ZT4KICAgICAgICAgICAgPC9jb21wb25lbnRfcGFyYW1ldGVyPgogICAgICAgICAgICA8Y29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICAgICAgICAgIDxrZXk+VEIgT0YgU1RPUkFHRSBDQVBBQ0lUWTwva2V5PgogICAgICAgICAgICAgICAgPHZhbHVlPjQyPC92YWx1ZT4KICAgICAgICAgICAgPC9jb21wb25lbnRfcGFyYW1ldGVyPgogICAgICAgICAgICA8Y29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICAgICAgICAgIDxrZXk+U0VSVklDRV9QQVJUX0RFU0NSSVBUSU9OPC9rZXk+CiAgICAgICAgICAgIDwvY29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICA8L2NvbXBvbmVudD4KICAgIDwvc2VydmljZUNvbXBvbmVudD4KICAgIAogICAgPCEtLSBBZGRlZCBieSBOaWxveSBvbiBEZWMgMTQsIDIwMTUgLS0+CiAgICA8c2VydmljZUNvbXBvbmVudD4KICAgICAgICA8Y29tcG9uZW50X2lkPjc1MDM0NTg8L2NvbXBvbmVudF9pZD4KICAgICAgICA8Y29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICAgICAgPGtleT5TRVJWSUNFX1BBUlRfREVTQ1JJUFRJT048L2tleT4KICAgICAgICAgICAgPHZhbHVlPk9yYWNsZSBFeGFkYXRhIENsb3VkIFNlcnZpY2UgLSBBZGRpdGlvbmFsIE9DUFUncyAtIE9DUFUgcGVyCiAgICAgICAgICAgICAgICAgIE1vbnRoPC92YWx1ZT4KICAgICAgICA8L2NvbXBvbmVudF9wYXJhbWV0ZXI+CiAgICAgICAgPGNvbXBvbmVudF9wYXJhbWV0ZXI+CiAgICAgICAgICAgIDxrZXk+R1NJX09SREVSX0xJTkVfSUQ8L2tleT4KICAgICAgICAgICAgPHZhbHVlPjEzOTE4OTgxMDg8L3ZhbHVlPgogICAgICAgIDwvY29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICA8Y29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICAgICAgPGtleT5NRVRSSUNfTkFNRTwva2V5PgogICAgICAgICAgICA8dmFsdWU+T0NQVSBQRVIgTU9OVEg8L3ZhbHVlPgogICAgICAgIDwvY29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICA8Y29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICAgICAgPGtleT5MSUNFTlNFX1BBUlRfREVTQ1JJUFRJT048L2tleT4KICAgICAgICAgICAgPHZhbHVlPk9yYWNsZSBFeGFkYXRhIENsb3VkIFNlcnZpY2UgLSBBZGRpdGlvbmFsIE9DUFUncyAtIE9DUFUgcGVyCiAgICAgICAgICAgICAgICAgIE1vbnRoIFByb2R1Y3Q8L3ZhbHVlPgogICAgICAgIDwvY29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICA8Y29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICAgICAgPGtleT5PQ1BVIFBFUiBNT05USDwva2V5PgogICAgICAgICAgICA8dmFsdWU+MDwvdmFsdWU+CiAgICAgICAgPC9jb21wb25lbnRfcGFyYW1ldGVyPgogICAgICAgIDxjb21wb25lbnRfcGFyYW1ldGVyPgogICAgICAgICAgICA8a2V5PklTX0FERElUSU9OQUxfSU5TVEFOQ0U8L2tleT4KICAgICAgICAgICAgPHZhbHVlPk48L3ZhbHVlPgogICAgICAgIDwvY29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICA8Y29tcG9uZW50X3BhcmFtZXRlcj4KICAgICAgICAgICAgPGtleT5JU19CQVNFX1NFUlZJQ0VfQ09NUE9ORU5UPC9rZXk+CiAgICAgICAgICAgIDx2YWx1ZT5OPC92YWx1ZT4KICAgICAgICA8L2NvbXBvbmVudF9wYXJhbWV0ZXI+CiAgICAgICAgPHNlcnZpY2VfY29tcG9uZW50X2lkPkI4MTYzNjwvc2VydmljZV9jb21wb25lbnRfaWQ+CiAgICAgICAgPHN0YXJ0X2RhdGU+MjAxNi0wNi0yMSAwNToyMjozMC42NjE8L3N0YXJ0X2RhdGU+CiAgICAgICAgPGVuZF9kYXRlPjIwMTYtMDItMjAgMDc6NTc6MjYuOTU8L2VuZF9kYXRlPgogICAgPC9zZXJ2aWNlQ29tcG9uZW50Pgo8L09yZGVyQ29tcG9uZW50cz4K</value><secured>false</secured></serviceSpecificProps>        
+        <isTrial>false</isTrial>
+        
+        <mosPayload><key>customer.name</key><value>Oracle Test Internal Group</value><secured>false</secured></mosPayload>
+        <mosPayload><key>subscription.id</key><value>502078462</value><secured>false</secured></mosPayload>
+        <mosPayload><key>service.entitlementid</key><value>100000000</value><secured>false</secured></mosPayload>
+        <mosPayload><key>csi.number</key><value>12345</value><secured>false</secured></mosPayload> 
+
+        <!-- Added for entitlement_specific_payload - Gen1 NoSDI Provisioning-->        
+        <entitlementSpecificProps><key>entitlement_category</key><value>SRVC_ENTITLEMENT</value><secured>false</secured></entitlementSpecificProps>
+        <entitlementSpecificProps><key>service_entitlement_id</key><value>100000000</value><secured>false</secured></entitlementSpecificProps>
+        <entitlementSpecificProps><key>customer_name</key><value>Oracle Test Internal Group</value><secured>false</secured></entitlementSpecificProps>
+        <entitlementSpecificProps><key>customer_account_number</key><value>31051</value><secured>false</secured></entitlementSpecificProps>
+        <entitlementSpecificProps><key>csi_number</key><value>12345</value><secured>false</secured></entitlementSpecificProps>
+        <entitlementSpecificProps><key>subscription_id</key><value>502078462</value><secured>false</secured></entitlementSpecificProps>
+        <entitlementSpecificProps><key>subscription_service_type</key><value>Exadata</value><secured>false</secured></entitlementSpecificProps>
+    </servicesToCreate>
+</ns2:create>

@@ -1,0 +1,158 @@
+{
+  "reshaped_node_subset": {
+    "added_computes": [
+      {
+        "compute_node_alias": "elastic_node_3",
+        "compute_node_hostname": "scaqae08adm03.us.oracle.com",
+        "network_info": {
+          "computenetworks": [
+            {
+              "admin": [
+                {
+                  "fqdn": "scaqae08adm03.us.oracle.com",
+                  "ipaddr": "10.31.17.151"
+                }
+              ]
+            },
+            {
+              "private": [
+                {
+                  "fqdn": "scaqae08db03-priv1.us.oracle.com",
+                  "ipaddr": "192.168.10.26"
+                },
+                {
+                  "fqdn": "scaqae08db03-priv2.us.oracle.com",
+                  "ipaddr": "192.168.10.27"
+                }
+              ]
+            },
+            {
+              "ilom": [
+                {
+                  "fqdn": "scaqae08adm03-ilom.us.oracle.com",
+                  "ipaddr": "10.31.17.173"
+                }
+              ]
+            }
+          ]
+        },
+        "rack_info": {
+          "uloc": "18",
+          "uheight": "1"
+        },
+        "virtual_compute_info": {
+          "c0_clusterHome": {
+            "compute_node_hostname": "scaqae08dv0301.usdv1.oraclecloud.com",
+            "network_info": {
+              "virtualcomputenetworks": [
+                {
+                  "private": [
+                    {
+                      "fqdn": "scaqae08db03vm01str-priv1.us.oracle.com",
+                      "ipaddr": "192.168.12.22"
+                    },
+                    {
+                      "fqdn": "scaqae08db03vm01str-priv2.us.oracle.com",
+                      "ipaddr": "192.168.12.23"
+                    }
+                  ]
+                },
+                {
+                  "client": [
+                    {
+                      "fqdn": "scaqae08dv0301.usdv1.oraclecloud.com",
+                      "ipaddr": "10.31.122.6"
+                    }
+                  ]
+                },
+                {
+                  "backup": [
+                    {
+                      "fqdn": "scaqae08dv0301-bk.us.oracle.com",
+                      "ipaddr": "10.31.123.6"
+                    }
+                  ]
+                },
+                {
+                  "interconnect": [
+                    {
+                      "fqdn": "scaqae08db03vmclu01-priv1.us.oracle.com",
+                      "ipaddr": "192.168.112.5"
+                    },
+                    {
+                      "fqdn": "scaqae08db03vmclu01-priv2.us.oracle.com",
+                      "ipaddr": "192.168.112.6"
+                    }
+                  ]
+                },
+                {
+                  "vip": [
+                    {
+                      "fqdn": "scaqae08dv0301-vip.us.oracle.com",
+                      "ipaddr": "10.31.122.14"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "c1_clusterHome": {
+            "compute_node_hostname": "scaqae08dv0301.usdv1.oraclecloud.com",
+            "network_info": {
+              "virtualcomputenetworks": [
+                {
+                  "private": [
+                    {
+                      "fqdn": "scaqae08db03vm01str-priv1.us.oracle.com",
+                      "ipaddr": "192.168.12.22"
+                    },
+                    {
+                      "fqdn": "scaqae08db03vm01str-priv2.us.oracle.com",
+                      "ipaddr": "192.168.12.23"
+                    }
+                  ]
+                },
+                {
+                  "client": [
+                    {
+                      "fqdn": "scaqae08dv0301.usdv1.oraclecloud.com",
+                      "ipaddr": "10.31.122.6"
+                    }
+                  ]
+                },
+                {
+                  "backup": [
+                    {
+                      "fqdn": "scaqae08dv0301-bk.us.oracle.com",
+                      "ipaddr": "10.31.123.6"
+                    }
+                  ]
+                },
+                {
+                  "interconnect": [
+                    {
+                      "fqdn": "scaqae08db03vmclu01-priv1.us.oracle.com",
+                      "ipaddr": "192.168.112.5"
+                    },
+                    {
+                      "fqdn": "scaqae08db03vmclu01-priv2.us.oracle.com",
+                      "ipaddr": "192.168.112.6"
+                    }
+                  ]
+                },
+                {
+                  "vip": [
+                    {
+                      "fqdn": "scaqae08dv0301-vip.us.oracle.com",
+                      "ipaddr": "10.31.122.14"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

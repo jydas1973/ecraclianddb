@@ -1,0 +1,18 @@
+{
+    "dataguard_clusters": {
+        "primary": {
+            "vms": {
+                "dummyslcs08adm05vm04-v261": "slcs08adm05vm04-v261.usdv1.oraclecloud.com",
+                "dummyslcs08adm06vm04-v261": "slcs08adm06vm04-v261.usdv1.oraclecloud.com"
+            }
+        }
+        ,
+        "standbys":
+        [{
+            "vms": {
+                "dummyslcs08adm05vm09-v266": "slcs08adm05vm09-v266.usdv1.oraclecloud.com",
+                "dummyslcs08adm06vm09-v266": "slcs08adm06vm09-v266.usdv1.oraclecloud.com"
+            }
+        }]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "tenantName": "TE004",
+    "tenantOcid": "NEW-OCI-TENANT-002",
+    "exaOcid": "NEW-OCI-TENANT-002-EXADATA-001",
+    "exaName": "T002EXA001",
+    "racksize": "quarter",
+    "dns": ["8.8.8.8"],
+    "ntp": ["10.1.1.1"],
+    "timezone": "US-PT",
+    "multiVM": 0,
+    "model": "X7-2",
+    "env": "ociExaCC",
+    "adminNwCidr": "192.168.0.1/21",
+    "ibNwCidr": "160.0.0.1/21",
+    "controlPlaneServerAttribs": {
+        "ip1": "20.0.0.1",
+        "ip2": "20.0.0.2",
+        "gateway": "11.8.8.1",
+        "netmask": "255.255.255.0",
+        "proxy": "t002exa001-proxy.us.oracle.com",
+        "dhcp": "true"
+    }
+}

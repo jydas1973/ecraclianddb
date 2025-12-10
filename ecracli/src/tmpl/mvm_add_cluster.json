@@ -1,0 +1,66 @@
+{
+  "clustername": "MVM-C1",
+  "purchasetype": "metered",
+  "backup_disk": false,
+  "dom0_bonding": true,
+  "grid_version": "v18",
+  "createsparse": false,
+  "exaunitAllocations": {
+    "cores": 50,
+    "memoryGb": 450,
+    "storageTb": 10,
+    "ohomeSizeGb": 600
+  },
+  "customer_network": {
+    "timezone": "UTC",
+    "scan": {
+      "hostname": "ed2db-scan",
+      "port": 1521,
+      "ips": [
+        "10.0.0.6",
+        "10.0.0.7",
+        "10.0.0.8"
+      ]
+    },
+    "network_services": {
+      "dns": ["169.254.169.254"],
+      "ntp": ["169.254.169.254"]
+    },
+    "nodes": [
+      {
+        "vip": {
+          "hostname": "ed2db01",
+          "domainname": "data.customer2.oraclevcn.com",
+          "ip": "10.0.0.4"
+        },
+        "client": {
+          "hostname": "ed2db01",
+          "domainname": "backup.customer2.oraclevcn.com",
+          "ip": "10.0.0.2",
+          "netmask": "255.255.255.0",
+          "vlantag": null,
+          "gateway": "10.0.0.1",
+          "mac": "00:10:66:e4:94:9c",
+          "hw_node_id": 7,
+          "dom0_oracle_name": "iad103709exdd018",
+          "domu_oracle_name": "iad103709exddu1802"
+        },
+        "backup": {
+          "hostname": "ed2db01-vip",
+          "domainname": "data.customer2.oraclevcn.com",
+          "ip": "10.0.1.2",
+          "netmask": "255.255.255.0",
+          "vlantag": "1",
+          "gateway": "10.0.1.1",
+          "mac": "02:00:17:01:2F:C0",
+          "hw_node_id": 7,
+          "dom0_oracle_name": "iad103709exdd018",
+          "domu_oracle_name": "iad103709exddu1802"
+        }
+      }
+    ]
+  },
+  "atp": {
+    "AutonomousDb": "N"
+  }
+}

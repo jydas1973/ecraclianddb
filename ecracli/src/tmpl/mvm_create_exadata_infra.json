@@ -1,0 +1,17 @@
+{
+    "multiVM": true,
+    "exadataInfrastructureId": "ocid1.cloudexadatainfrastructure.mvm_flowtester",
+    "servers": [
+        {
+            "hw_type": "CELL", 
+            "model": "X8M-2", 
+            "quantity" : 3
+        },
+        {
+            "hw_type": "COMPUTE", 
+            "model": "X8M-2", 
+            "quantity" : 6
+        }
+    ],
+    "idemtoken" : "b64e5c1b-5916-413b-990f-d407e445f41e"
+}

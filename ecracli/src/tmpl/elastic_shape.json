@@ -1,0 +1,16 @@
+{
+    "exadataInfrastructureId": "testdbsystem",
+    "servers": [
+        {
+	    "hw_type": "CELL", 
+	    "model": "X8M-2", 
+	    "quantity" : 3
+	},
+        {
+	    "hw_type": "COMPUTE", 
+	    "model": "X8M-2", 
+	    "quantity" : 2
+	}
+    ],
+    "fabricname": "SEA200041QFAB"
+}

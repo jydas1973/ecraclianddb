@@ -1,0 +1,16 @@
+{
+     "rackname": "sea200125exd-d0-01-02-cl-01-03-clu01",
+     "exadataInfrastructureId": "adsfasdfasfd",
+     "servers": [
+         {
+	     "hostname": "sea201109exdd005",
+	     "hw_type": "COMPUTE", 
+	     "domainname": "sea201109exd.adminsea2.oraclevcn.com"
+	 },
+         {
+	     "hostname": "sea201109exdd006",
+	     "hw_type": "COMPUTE", 
+	     "domainname": "sea201109exd.adminsea2.oraclevcn.com"
+	 }
+     ]
+}

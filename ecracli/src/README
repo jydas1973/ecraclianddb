@@ -1,0 +1,3 @@
+ECRA CLI - Command Line Interface
+---------------------------------
+ECRACLI is a tool to simplify the use of ECRA utility for provisioning and lifecycle management of the exacloud database offering. It functions as a wrapper to communicate with the ECRA rest service endpoint. For more detailed information, please visit the ecracli wiki page https://stbeehive.oracle.com/teamcollab/wiki/Exadata+PaaS:ecracli
